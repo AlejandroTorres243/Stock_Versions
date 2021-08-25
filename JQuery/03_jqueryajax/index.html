@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>consulta ajax</title>
+		<meta http-equiv="keywords" content="enter,your,keywords,here" />
+		<meta http-equiv="description" content="A short description of this page." />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+		<script type="text/javascript" 
+		src="js/jquery-1.5.1.js"></script>
+	</head>
+	<body id="body">
+		<a id="parcial" href="tablacompleta.html" >carga de html parcial</a>
+		<a id="servicio" href="servicioweb.php">Enlace a servicio rest</a>
+		<a id="enviopost" href="servicioweb.php">Envio via post</a>
+		<div id="resultado"></div>
+		<form action="servicioweb.php" method="post">
+			<input type="text" name="username" id="username"/>
+			<div id="imagen"></div>
+			<input type="submit" name="submit"value="submit"/>
+		</form>
+		<script>
+			$(document).ready(
+				function(){
+					/*$("#parcial").click(
+						function(evento){
+							$("#resultado").load(
+								"tabla.html");
+							evento.preventDefault();
+						}
+					);*/
+					$("#parcial").click(
+						function(evento){
+							$.get("tabla.html",
+								function(data){
+									$("#resultado").html(data);
+								}
+							);
+							evento.preventDefault();
+						}
+					);
+					$("#servicio").click(
+						function(evento){
+							$.get(
+								"servicioweb.php?ajax=true&username="
+								+$("#username").val(),
+								function(data){
+									if(data=="si"){
+										$("#imagen").html(
+											"<img src='imgs/ok.jpg' width='100'/>"
+										);
+									}else{
+										$("#imagen").html(
+											"<img src='imgs/cancel.png' width='100'/>"
+										);
+									}
+								}
+								
+							);
+							evento.preventDefault();
+					});	
+					$("#enviopost").click(
+						function(evento){
+							$.post(
+								"servicioweb.php",
+								{
+									"ajax":"true",
+									"username":$("#username").val()
+								},
+								function(data){
+									if(data=="si"){
+										$("#imagen").html(
+											"<img src='imgs/ok.jpg' width='100'/>"
+										);
+									}else{
+										$("#imagen").html(
+											"<img src='imgs/cancel.png' width='100'/>"
+										);
+									}
+								}
+								
+							);	
+							evento.preventDefault();	
+						}
+					);
+					$("#username").keyup(
+						function(){
+							$.get(
+								"servicioweb.php?ajax=true&username="
+								+$("#username").val(),
+								function(data){
+									if(data=="si"){
+										$("#imagen").html(
+											"<img src='imgs/ok.jpg' width='100'/>"
+										);
+									}else{
+										$("#imagen").html(
+											"<img src='imgs/cancel.png' width='100'/>"
+										);
+									}
+								}
+								
+							);
+						
+						}
+					);
+					
+				}
+				
+			);
+		</script>
+	</body>
+</html>

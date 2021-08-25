@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- cuidado si no se coloca esto -->
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.1.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.1.0-rc.1.min.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Page Title</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Se aconseja que para hacer botones de navegación, se utilicen etiquetas a (enlaces)</p>
+		<p>Mientras que si son botones para hacer cosas con javascript, o mandar formularios se utilicen ya &lt;button&gt; o &lt;input&gt;</p>
+		<a href="index.html" data-role="button">Link button</a>
+		<a href="index.html" data-role="button" data-mini="true">Boton mini</a>
+		
+		<p>Los button, input y demás se colocan automaticamente como botones, si se añaden
+			automaticamente, se puede utilizar $('[type="submit"]').button();, es decir la llamada al "plugin" button para crear ese efecto de boton</p>
+			<button>Button element</button>
+		
+		<p><strong>Input type="button"</strong> based button:</p>
+		<input type="button" value="buttonBtn" />
+		
+		<p><strong>Input type="submit"</strong> based button:</p>
+		<input type="submit" value="submitBtn" />
+		
+		<p><strong>Input type="reset"</strong> based button:</p>
+		<input type="reset" value="resetBtn" />
+		
+		<p><strong>Input type="image"</strong> based button:</p>
+		<input type="image" value="imageBtn" />
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

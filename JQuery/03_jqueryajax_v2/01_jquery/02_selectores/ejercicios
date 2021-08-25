@@ -1,0 +1,200 @@
+Previo:
+	Todos los ejercicios los vamos a realizar en principio en la plantilla básica.
+	Por lo que dentro del section principal vamos a crear un <article>
+	
+	de forma que quedarí­a algo así
+	
+	<section id="contenido">
+		<article id="ejercicio1">
+			<header>
+				<h2>Ejercicio 1</h2>
+				Texto del enunciado del ejercicio.
+			</header>
+			<!-- contenido html del ejercicio 1 -->			
+		</article>
+	</section>
+	
+	Por cada ejercicio usaremos un fichero html distinto para que no tengamos 
+	problemas con codigo jquery que pueda estar interfiriendo con otros
+	ejercicios.
+	
+Ejercicio 1:
+	.css()
+	Con .css("atributo", valor) podemos cambiar una propiedad css 
+	del elemento seleccionado.
+	por ejemplo con .css("background-color", "red"); 
+	a todos los elementos seleccionados
+	les cambiariamos el color de fondo.
+	
+	Crea una lista desordenada (<ul></ul>) con 10 elementos (<li></li>).
+	El segundo tendrá id="un_elemento"
+	El cuarto el quinto y el sexto tendran la clase middle
+	El sexto tendrá id="otro_elemento".
+		
+	Con jQuery haz lo siguiente.
+	El elemento con id un_elemento tendrá el texto rojo
+	El elemento con id otro_elemento tendrá el texto azul
+	los elementos con la clase middle tendrán fondo verde
+	Los elementos con id un_elemento y otro_elemento tendran un borde amarillo.
+	
+	
+Ejercicio 2:
+	Crea un div, un <p> con clase "mi_clase" otro <p> con clase "no_es_mi_clase", y un span.
+	Crea el codigo jquery necesario para qu el div, el p con clase mi_clase y el span tengan un borde rojo.
+	
+Ejercicio 3:
+	Con la lista anterior, añade otros 5 elementos <li> para que haya un total de 15:
+	El primer elemento tendrá fondo verde,
+	El ultimo elemento tendrá fondo rosa
+	Los elementos pares tendrán fondo rojo
+	Los elementos los impares un fondo azul.
+	El elemento con indice 10 tendrá fondo negro y letras blancas
+	El y los elementos con indice mayor que 12 tendran fondo amarillo.	
+	 
+
+
+Ejercicio 4:
+	click()
+	Con la funcion click estamos asignando el evento click al elemento seleccionado.
+	La forma de funcionar es .click(mi_funcion_a_realizar) o 
+	.click(function(evento){
+		//codigo de mi funcion
+	});
+	Crea un boton.
+	Crea un elemento p con el texto que quieras
+	Crea otro elemento p con id="mi_p" con el texto que quieras.
+	Al pulsar el boton  el p con id="mi_p" debe ocultarse.
+	
+Ejercicio 5:
+	Crea un boton.
+	Crea un elemento p con el texto que quieras
+	Crea otro elemento p con id="mi_p" con el texto que quieras.
+	Al pulsar el boton el elemento que NO tiene id="mi_p" debe ocultarse.
+	
+Ejercicio 6:
+	Crea una lista desordenada con 5 elementos li, y 3 elemento li tendrán un <a>
+	cuyo atributo href estará apuntando a diferentes archivos. (no hace falta que incluyas archivos, solo
+	queremos trabajar con selectores del atributo href)	los elementos apuntaran a:
+	href="https://sitio1.com/"
+	href="mi_imagen.jpg"
+	href="mi_imagen.gif"
+	
+	Crea tambien un boton.
+	
+	Al pulsar el boton, los elementos a tendran color de fondo rosa.
+	El a con href que empiece por https cambiará el tamaño del texto a 20px
+	El a con href que termine en .jpg cambiará el tamaño del texto a 5px.
+	Todos los href que contengan el texto mi_imagen tendran un borde verde.
+
+Ejercicio 7:
+	Crea un formulario con al menos:
+	3 input tipo texto (uno de ellos desactivado con el atributo disabled),
+	un input password
+	3 checkbox
+	3 radiobutton
+	un textarea	.
+	Y un boton.
+	Al pulsar el boton Crea un efecto "glow" con box-shadow (css3) para aquellos elementos
+	que estén vacios, o marcados.
+
+	
+
+Ejercicio 8:
+	click() y $(this)	
+	Si queremos modificar el elemento seleccionado al usar click() 	dentro de mi_funcion_a_realizar deberemos utilizar el selector $(this) por ejemplo:
+	$("p").click(function(evento){
+		$(this).loquesea();
+	}) //esto solo para modificar el elemento p actual.
+	
+Ejercicio 9:
+	hide("slow");
+	con .hide() con seguimos ocultar elementos.
+	Crea una lista desordenada con 10 elementos.
+	A 4 de esos elementos colcales la clase "pulsar".
+	Cuando hagas click sobre esos elementos con esa clase, deberán ocultarse.
+	
+Ejercicio 10:
+	show();
+	con .show() podremos mostrar elementos ocultos.
+	Crea una lista desordenada con 10 elementos, 5 de ellos ocultos(popiedad css display:none).
+	Crea un boton.
+	El efecto a conseguir es que al pulsar el boton, los 5 elementos ocultos se muestren.
+	
+Ejercicio 11:
+	show(500, funcion)
+	Tanto hide como show como toggle () cque veremos mas adelante permiten introducir a parte de slow
+	y fast, un numero (en milisegundos) y una funcion que se ejecuta al terminar el proceso.
+	Partiendo del ejercicio anterior:
+	Añade un elemento li más oculto con clase "final".
+	Ahora al plsar el boton se mostraran todos los ocultos menos el de la clase "final", 
+	que se mostrará una vez haya terminado el proceso de enseñar el resto.
+	
+
+
+	
+Ejercicio 12:
+	Concatenando show hide.
+	.hide() y .show() pueden concatenarse: 
+	$(selector).hide().show().hide()....
+	Crea un div con tamaño 100x100 y fondo azul. 
+	Cuando hagas click en él, ocultalo con slow, muestralo con fast y ocultalo con 200 milisegundos.
+	Despues a parte crea otro .show() para el mismo elemento (no concatenado, es decir, en una linea a parte)
+	 con 1000 milisegundos y haz que al finalizar muestre un alert con el texto "ejercicio finalizado".
+	 	
+
+Ejercicio 13:
+	toggle()
+	Crea un boton (<button></button>), y 2 parrafos (<p></p>). Uno de ellos estará oculto 	
+	El primer parrafo tendrá el texto "Hola" y el segundo tendrá el texto "Adios"
+	El efecto a conseguir es que al pulsar sobre el botón el parrafo visible desaparecera
+	y el oculto aparecerá. Y así siempre que se pulse el botón.
+
+Ejercicio 14:
+	toggle("slow")
+	Crea un boton (<button></button>), y 2 parrafos (<p></p>) ocultos, a los parrafos
+	añadeles un color de fondo.
+	El primer parrafo tendrá el texto "Hola" y el segundo tendrá el texto "Adios"
+	El efecto a conseguir es que al pulsar sobre el botón ambos parrafos se muestren o se oculten
+	a la vez. Prueba tambien con "fast". 
+
+	
+Ejercicio 15:
+	Función fadeIn()
+	La sintaxis es igual que show, hide etc...
+	Crea 3 divs. Con ancho y alto de 80px. Que floten a la izquierda.
+	Uno será rojo, otro azul, y otro verde. Estarán ocultos
+	Crea un texto dentro de etiquetas span.
+	El efecto a conseguir es que cada vez hagas click en la etiqueta span aparezca uno de los
+	divs con la funcion fadeIn("slow");
+	
+Ejercicio 16:
+	text() y fadeOut()
+	Podemos modificar el texto de un elemento con .text("texto").
+	fadeOut() hace que desaparezca el elemento. La sintaxis es igual que show, hide, toggle, o fadeIn
+	Vamos a crear un lanzamiento de dados.
+	Crea un div  y dentro un <a> con tamaño 100x100 y con el texto 0 y un tamaño mas o menos grande.
+	Cuando pulses en él deberá desaparecer el <a>, calcular un número random entre 0 y 10 (entero sin decimales)
+	Acto seguido se deberá mostrar. (revisa apuntes sobre Math.random()).
+	
+Ejercicio 17:
+	is()
+	Con is tenemos una forma de filtrar por ejemplo:
+		$(selector).is(mi_pregunta_con_otro_selector)
+	Esto devuelve un valor booleano.
+	
+	slideDown()
+	con la misma sintaxis que hide() show....
+	Crea 4 divs, ocultos, con ancho 50px y alto 100px, fondo verde, que esten flotando a la izquierda.
+	Crea un boton
+	Al pulsar el boton, si los elementos estan ocultos, se deberan mostrar con slideDown(), si 
+	estan visibles se deben ocultar con hide().
+	
+Ejercicio 18:
+	slideUp()
+	con la misma sintaxis que hide() show....
+	Repite el ejercicio anterior, pero esta vez, al pulsar el boton, sii los elementos
+	estan visibles se deberan ocultar con slideUp y si estan ocultos mostrarse con show()
+	
+Ejercicio 19:
+	Prueba los 2 ejercicios anteriores utilizando fadeOut y fadeIn en vez de hide y show respectivamente.
+	

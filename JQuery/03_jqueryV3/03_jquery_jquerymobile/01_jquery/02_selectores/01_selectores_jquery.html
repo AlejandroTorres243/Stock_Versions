@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selectores jQuery</title>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+/*
+
+Selector			Ejemplo 					Selecciona
+*					$("*")						Todos los elementos
+#id					$("#lastname")				El elemento con id=”lastname”
+.class				$(".intro")					Todos los elementos con class=”intro”
+element				$("p")						Todos los elementos <p>
+.class.class		$(".intro.demo")			Todos los elementos con las clases intro y demo
+  
+ 
+:first				$("p:first")				El primer elemento <p>
+:last				$("p:last")					El último elemento p
+:even				$("tr:even")				Todos los <tr> pares
+:odd				$("tr:odd")					Todos los <tr> impares
+ 
+ 
+:eq(index)			$("ul li:eq(3)")			El cuarto elemento en una lista (empieza en 0)
+:gt(no)				$("ul li:gt(3)")			Los elementos de una lista con índice mayor a 3
+:lt(no)				$("ul li:lt(3)")			Los elementos de una lista cuyo inder sea menor que 3
+:not(selector)		$("input:not(:empty)")		Todos los input que no estén vacíos
+ 
+ 
+:header				$(":header")				Todos los elementos header (h1, h2...)
+:animated			$(":animated")				Todos los elementos animados
+ 	 
+ 
+:contains(text)		$(":contains('Hola mundo')")	Todos los elementos que contengan el texto Hola mundo
+:empty				$(":empty")					Todos los elementos sin elementos nodos hijos
+:hidden				$("p:hidden")				Todos los <p> ocultos
+:visible			$("table:visible")			Todas las tablas (<table>) visibles
+ 
+ s1,s2,s3			$("th,td,.intro")			Todos los elementos que concuerden con los selectores
+ 
+  
+[attribute]			$("[href]")					Todos los elementos con atributo href
+[attribute=value]	$("[href='default.htm']")	Todos los elementos con un valor del atributo href igual que "default.htm"
+[attribute!=value]	$("[href!='default.htm']")	Todos los elementos cuyo valor del atributo href no sea igual a "default.htm"
+[attribute$=value]	$("[href$='.jpg']")			Todos los elementos cuyo valor del atributo href termine en".jpg"
+[attribute^=value]	$("[href^='jquery_']")		Todos los elementos con un atributo href cuyo valor empiece por “jquery_”
+ 
+ 
+ 
+:input				$(":input")					Todos los elementos input
+:text				$(":text")					Todos los elementos input con type=”text”
+:password			$(":password")				Todos los elementos input con type=”password”
+:radio				$(":radio")					Todos los elementos input con type=”radio”
+:checkbox			$(":checkbox")				Todos los elementos input con type=”checkbox”
+:submit				$(":submit")				Todos los elementos input con type=”submit”
+:reset				$(":reset")					Todos los elementos input con type=”reset”
+:button				$(":button")				Todos los elementos input con type=”button”
+:image				$(":image")					Todos los elementos input con type=”image”
+:file				$(":file")					Todos los elementos input con type=”file”
+ 
+ 
+ 
+:enabled			$(":enabled")				Todos los input activos
+:disabled			$(":disabled")				Todos los input inactivos
+:selected			$(":selected")				Todos los input seleccionados
+:checked			$(":checked")				Todos los input marcados (checked)
+ 
+ 
+ */
+</script>
+
+</head>
+
+<body>
+
+</body>
+</html>

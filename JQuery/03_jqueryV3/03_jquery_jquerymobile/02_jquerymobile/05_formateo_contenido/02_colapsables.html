@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- cuidado si no se coloca esto -->
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.1.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.1.0-rc.1.min.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h2>elemento colapsable</h2>
+		<div data-role="collapsible">
+				<h3>I'm a header</h3>
+				<p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+			</div>
+
+	<h2>Abiertos por defecto</h2>
+		
+	
+
+			<div data-role="collapsible" data-collapsed="false">
+				<h3>I'm a header</h3>
+				<p>I'm the collapsible content. I'm expanded by default because I have the "collapsed" state set to false.</p>
+			</div>
+	
+			<h2>Mini</h2>
+
+
+		<div data-role="collapsible" data-mini="true">
+			<h3>I'm a mini header</h3>
+			<p>I'm the collapsible content. I'm expanded by default because I have the "collapsed" state set to false.</p>
+		</div>
+		
+		<h2>Iconos</h2>
+		
+		
+		<div data-role="collapsible" data-iconpos="right">
+			<h3>I'm a header</h3>
+			<p><code>data-iconpos="right"</code></p>
+		</div>
+		
+					
+	
+		
+		<h2>Mirando un poco por encima los temas</h2>
+
+		
+		<div data-role="collapsible" data-theme="a" data-content-theme="a">
+			<h3>Header swatch A</h3>
+			<p>I'm the collapsible content with a themed content block set to "A".</p>
+		</div>
+
+
+		
+		<div data-role="collapsible" data-theme="b" data-content-theme="d">
+			<h3>Header swatch B</h3>
+			<p>I'm the collapsible content with a themed content block set to "D".</p>
+		</div>
+
+		
+		
+		<h2>Anidado</h2>
+		
+		<p>Collapsibles can be nested inside each other if needed. In this example, we're setting the content theme to provide clearer visual connection between the levels.</p>
+		<div data-role="collapsible" data-collapsed="false" data-theme="e" data-content-theme="c">
+			<h3>I'm a header</h3>
+			<p>I'm the collapsible content. By default I'm open and displayed on the page, but you can click the header to hide me.</p>
+			
+			<div data-role="collapsible" data-theme="c" data-content-theme="c">
+				<h3>I'm a nested collapsible with a child collapsible</h3>
+				<p>I'm a child collapsible.</p>
+					<div data-role="collapsible" data-theme="d" data-content-theme="d">
+						<h3>Nested inside again.</h3>
+						<p>Three levels deep now.</p>
+					</div><!-- /section 1A -->
+			</div><!-- /section 1 -->
+
+			
+			<div data-role="collapsible" data-content-theme="c">
+				<h3>Section 3: Form elements</h3>
+				<form action="#" method="get">
+					<div data-role="fieldcontain">
+						<label for="textarea">Textarea:</label>
+						<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+					</div>
+					<div data-role="fieldcontain">
+						<label for="slider">Input slider:</label>
+					 	<input type="range" name="slider" id="slider" value="0" min="0" max="100"  />
+					</div>
+					<fieldset class="ui-grid-a">
+							<div class="ui-block-a"><button type="submit" data-theme="c">Cancel</button></div>
+							<div class="ui-block-b"><button type="submit" data-theme="b">Submit</button></div>	   
+				    </fieldset>
+				</form>
+			</div><!-- /section 2 -->
+
+			<div data-role="collapsible" data-content-theme="c">
+				<h3>Section 4: Collapsed list</h3>
+				<p>Here is an inset list:</p>
+				<ul data-role="listview" data-inset="true" data-theme="d">
+					<li><a href="index.html">Acura</a></li>
+					<li><a href="index.html">Audi</a></li>
+					<li><a href="index.html">BMW</a></li>
+					<li><a href="index.html">Cadillac</a></li>
+					<li><a href="index.html">Chrysler</a></li>
+					<li><a href="index.html">Dodge</a></li>
+					<li><a href="index.html">Ferrari</a></li>
+					<li><a href="index.html">Ford</a></li>
+				</ul>
+				</div><!-- /section 3 -->
+			</div>
+		</div>
+		
+		
+		<h2>Rejillas en las barras</h2>
+		<!--  NOTE: Inline styles are for demo purposes only, please use external styles -->
+		<div data-role="footer" data-theme="a" class="ui-bar ui-grid-c">
+				<div class="ui-block-a"><h3 style="margin-top:10px;">Settings</h3></div>
+				<div class="ui-block-b"><label for="value" style="margin:8px 10px 0 0; text-align:right;">Price</label> </div>
+				<div class="ui-block-c"><input id="value" value="5,000"></div>	 
+				<div class="ui-block-d"><div style="margin:6px 0 0 10px;"><button type="submit" data-theme="b">Update</button></div></div>  
+	    </div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Palindromo</title>
+    <script type="text/javascript">
+      var cadena = [];
+         
+      function palindromos(cadena){
+        var contp = 0;
+        var contnp = 0;
+        for(var cont1=0; cont1 < cadena.lenght; cont1++){
+          if(cadena[cont1] == cadena[cadena.lenght-cont1])    
+            contp += 1;
+          else
+            contnp +=1;
+          console.log(contp);
+        }
+        /*if(contp > contnp)
+          console.log("Es palindromo");
+        else
+          console.log("No es palindromo");*/
+          return contp;
+      }
+      cadena = ["AREPERA"];   
+      console.log(palindromos(cadena));
+
+    </script>
+  </head>
+  <body>
+    <h1>BIENVENIDO A JAVASCRIPT</h1>
+  </body>
+</html>

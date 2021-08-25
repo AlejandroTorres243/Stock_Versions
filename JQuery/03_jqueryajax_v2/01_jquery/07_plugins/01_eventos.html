@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+p { color:red; }
+span { color:blue; }
+</style>
+  <script src="js/jquery.js"></script>
+  <script src="07_eventos.js"></script>
+</head>
+<body>
+  
+<button>Lanzar evneto personalizado</button>
+<div id="fun"></div>
+<script>
+$('#fun').tooltip();
+// Un tiempo despues
+
+
+$("button").click(function () {
+$('#fun').tooltip('destroy');
+});
+
+</script>
+
+</body>
+</html>
+</body>
+</html>

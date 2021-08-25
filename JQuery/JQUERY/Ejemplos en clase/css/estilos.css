@@ -1,0 +1,11 @@
+label, input, button {
+    margin-top: 20px;
+}
+
+input.valid {
+    border: 3px solid green; 
+}
+
+input.error {
+    border: 3px solid red; 
+}

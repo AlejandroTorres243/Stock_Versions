@@ -1,0 +1,44 @@
+Ejercicio 1:
+	Crea un formulario donde se pueda introducir los siguientes campos:
+		 user_name,
+    	 name,
+         firstname.
+         
+	Manda los datos al servicio devuelvedatos_html.php via POST (los parametros se deberan llamar exactamente igual)
+	Te devolverá los datos que has introducido como una cadena de caracteres con la siguiente estructura:
+	
+	"<tr><td>usuario</td><td>nombre</td><td>apellido</td></tr>"
+	
+	Insertalo en una tabla (<table></table>).
+	El proceso se puede realizar las veces que se quiera.
+	
+Ejercicio 2:
+	Modifica el ejercicio 1 para recibir un JSON con la estructura: 
+	{"user_name":"usuario","name":"nombre","firstname":"apellido"}.
+	Insertalo en la tabla
+	(fichero devuelvedatos_json.php)
+	
+Ejercicio 3:
+	Crea una petición GET al servicio get_autores.php. No deberá llevar ningún parametro.
+	La respuesta es un JSON con la siguiente estructura
+	[ {"id": 1, "nombre": "nombre"},
+	  {"id": 2, "nombre": "nombre"},
+	  ...
+	]	
+
+	Cuando recibas la petición, crea un formulario, con un elemento select donde crees los options necesarios;
+	
+	
+Ejercicio 4:
+	Modifica el ejercicio 3, añadiendo un botón que al pulsarlo coga el elemento seleccionado en el select 
+	y haga una peticion GET con parámetro el parametro "id".
+	
+	Se te devolverá un json con la siugiente estructura:
+		[   {"autor":"nombre autor","disco":"nombre disco","year":"1991"},
+			{"autor":"nombre autor","disco":"nombre disco","year":"1991"},
+			{"autor":"nombre autor","disco":"nombre disco","year":"1991"},
+			{"autor":"nombre autor","disco":"nombre disco","year":"1991"},
+		]
+	Introduce cada elemento en una tabla "tabla_discos".
+	
+	

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>WELCOME TO Javascript</h1>
+    <script type="text/javascript">
+        function devuelve2(){
+            return 2;
+        }
+        var valor = devuelve2();
+        console.log(valor);
+        function sumaDe2(a, b){
+          var resultado = a + b;
+          return resultado;
+        }
+        var m = 49;
+        var k = 21;
+        console.log(sumaDe2(m,k));
+        var s = 1;
+        var r = 3;
+        console.log(sumaDe2(s,r));
+        function restaDe2(a, b){
+          var resultado = a - b;
+          return resultado;
+        }
+        console.log(restaDe2(s,r));
+        function multiplica2(a, b){
+          var resultado = a * b;
+          return resultado;
+        }
+        console.log(multiplica2(s,r));
+
+
+//creamos una function de arreglos que crear un arreglo de 7 posiciones vacio
+        function crearArreglo(){
+
+           var a = ["", "", "", "", "", "", ""];
+           return a;
+        }
+
+        function inicializaArreglo(){
+
+          for(cont = 0; cont < arreglo.length; cont++)
+            arreglo[cont] = "0";
+        }
+
+
+/*
+        function CreaArray(){
+          var NoEsMiArray= ["","","","","","",""];
+  return NoEsMiArray;
+
+}
+
+var MiArray=CreaArray();
+
+
+
+function Inicializa(){
+  for( i=0;i<MiArray.length;i++){
+    MiArray[i]="0";
+  }
+}
+console.log(Inicializa());
+    console.log(MiArray);
+  */
+
+        var arreglo = new crearArreglo();
+        console.log(arreglo);
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- cuidado si no se coloca esto -->
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.1.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.1.0-rc.1.min.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Dialogos</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Creando dialogos</h2>
+		<p> todas las paginas pueden ser presentadas como un dialogo modal con <code>data-rel="dialog"</code> automaticamente se formatea para darle el aspecto de dialogo</p>
+
+			
+			<a href="#dialogo1" data-role="button" data-inline="true" data-rel="dialog" data-transition="pop">Abrir dialogo</a>
+			
+
+			
+			<h2>Transiciones</h2>
+			<p>Por defecto se abre con 'pop', se puede especificar, en todos. Se recomienda usar pop slidedown o flip.</p>
+			
+			
+			<div>
+			<a href="#dialogo1" data-role="button" data-inline="true" data-rel="dialog" data-transition="pop">data-transition="pop"</a>
+			<a href="#dialogo1" data-role="button" data-inline="true" data-rel="dialog" data-transition="slidedown">data-transition="slidedown"</a>
+			<a href="#dialogo1" data-role="button" data-inline="true" data-rel="dialog" data-transition="flip">data-transition="flip"</a>
+			</div>
+	
+	
+			<h2>Cerrar los dialogos</h2>
+			<p>HAbitualmente cuando cualquier link en un dialogo es pulsado, el framework. tambien se puede cerrar añadiendo un boton con  data-rel="back".</p>
+			<p>Si se crean paginas con javascript, a parte del data-rel="back" que se podria añadir automaticamente, tambien se puede cerrar con el metodo close(), por ejemplo: $('.ui-dialog').close()</p>
+
+			
+			<h3>Estableciendo el valor del "boton volver"</h3>
+			<p>Al igula que en cualquier pagina, se puede poner este valor mediante una opcion o un atributo. La opcion puede ser establecida para todos los dialogos dentro del evento mobileinit, y establecidendo <code>$.mobile.dialog.prototype.options.closeBtnText = "mitexto"</code>, o tambien, se puede utilizar el atributo <code>data-close-btn-text</code></p>
+			
+			<h2>Historial</h2>
+			<p>Los dialogos no se incluyen en el historial</p>
+				
+			<h2>Margenes</h2>
+			<p>Por defecto todos los dialogos tienen un max-width de 500px y 15px de padding a cada lado y un 10% de margin top, pero se puede modificar esto de la siguiente forma</p>
+
+
+<code><pre>
+.ui-dialog .ui-header, 
+.ui-dialog .ui-content, 
+.ui-dialog .ui-footer { 
+<strong>	max-width: 500px; 
+	margin: 10% auto 15px auto; </strong>
+}
+</pre></code>	
+	</div><!-- /content -->
+
+</div><!-- /page -->
+<div data-role="page" id="dialogo1" data-close-btn-text="Cerrar">
+
+	<div data-role="header">
+		<h1>Dialogos</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Page content goes here.</p>		
+	</div><!-- /content -->
+
+</div><!-- /page -->
+</body>
+</html>

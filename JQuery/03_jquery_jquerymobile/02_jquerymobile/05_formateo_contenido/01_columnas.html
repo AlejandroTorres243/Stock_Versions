@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- cuidado si no se coloca esto -->
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.1.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.1.0-rc.1.min.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Page Title</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h1>Antes de ver esto, ver los estilos por defecto en la web de jquerymobile</h1>
+		
+<pre><code>
+&lt;fieldset class=&quot;ui-grid-a&quot;&gt;
+	&lt;div class=&quot;ui-block-a&quot;&gt;&lt;button type=&quot;submit&quot; data-theme=&quot;c&quot;&gt;Cancel&lt;/button&gt;&lt;/div&gt;
+	&lt;div class=&quot;ui-block-b&quot;&gt;&lt;button type=&quot;submit&quot; data-theme=&quot;b&quot;&gt;Submit&lt;/button&gt;&lt;/div&gt;	   
+&lt;/fieldset&gt;
+</code></pre>
+	
+		<h2>2 columnas 50/50%</h2>
+		<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><button type="submit" data-theme="c">Cancel</button></div>
+				<div class="ui-block-b"><button type="submit" data-theme="b">Submit</button></div>	   
+	    </fieldset>
+	    
+	    <h2>otro ejemplo</h2>
+			
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:120px">Block A</div></div>
+			<div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:120px">Block B</div></div>
+		</div><!-- /grid-a -->
+
+		<h2>3 columnas 33/33/33%</h2>
+			
+		<div class="ui-grid-b">
+			<div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:120px">Block A</div></div>
+			<div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:120px">Block B</div></div>
+			<div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:120px">Block C</div></div>
+		</div><!-- /grid-b -->
+		
+		<p>Otro ejemplo</p>
+
+		<fieldset class="ui-grid-b">
+				<div class="ui-block-a"><button type="submit" data-theme="c">Hmm</button></div>
+				<div class="ui-block-b"><button type="submit" data-theme="a">No</button></div>	 
+				<div class="ui-block-b"><button type="submit" data-theme="b">Yes</button></div>  
+	    </fieldset>
+		
+		<h2>4 columnas 25/25/25/25%</h2>
+			
+		<div class="ui-grid-c">
+			<div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:120px">A</div></div>
+			<div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:120px">B</div></div>
+			<div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:120px">C</div></div>
+			<div class="ui-block-d"><div class="ui-bar ui-bar-e" style="height:120px">D</div></div>
+		</div><!-- /grid-c -->
+		
+		<h2>5 columnas 20/20/20/20/20%</h2>
+			
+		<div class="ui-grid-d">
+			<div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:120px">A</div></div>
+			<div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:120px">B</div></div>
+			<div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:120px">C</div></div>
+			<div class="ui-block-d"><div class="ui-bar ui-bar-e" style="height:120px">D</div></div>
+			<div class="ui-block-e"><div class="ui-bar ui-bar-e" style="height:120px">E</div></div>
+		</div><!-- /grid-c -->
+		
+		<h2>Multiple</h2>
+		
+			
+		<div class="ui-grid-b">
+			<div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:120px">A</div></div>
+			<div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:120px">B</div></div>
+			<div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:120px">C</div></div>
+			<div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:120px">A</div></div>
+			<div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:120px">B</div></div>
+			<div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:120px">C</div></div>
+			<div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:120px">A</div></div>
+			<div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:120px">B</div></div>
+			<div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:120px">C</div></div>
+		</div>
+		
+		
+		<h2>Rejillas en las barras</h2>
+		<!--  NOTE: Inline styles are for demo purposes only, please use external styles -->
+		<div data-role="footer" data-theme="a" class="ui-bar ui-grid-c">
+				<div class="ui-block-a"><h3 style="margin-top:10px;">Settings</h3></div>
+				<div class="ui-block-b"><label for="value" style="margin:8px 10px 0 0; text-align:right;">Price</label> </div>
+				<div class="ui-block-c"><input id="value" value="5,000"></div>	 
+				<div class="ui-block-d"><div style="margin:6px 0 0 10px;"><button type="submit" data-theme="b">Update</button></div></div>  
+	    </div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

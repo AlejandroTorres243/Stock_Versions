@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Eventos</title>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+/*
+OBJETO EVENTO:
+
+
+event.currentTarget			Devuelve el elemento sobre el que se ha lanzado el evento. 
+						
+event.data					Devuelve los datos que hayamos podido pasar al evento 
+							cuando se asocia con bind
+						
+event.isDefaultPrevented()	Devuelve si se ha lanzado el método preventDefault() o no.
+
+event.isImmediatePropagationStopped()	Devuelve si el método stopImmediatePropagation() 
+										se ha llamado, o no, en este objeto.
+										
+event.isPropagationStopped()			Devuelve si el método stopPropagation() ha sido llamado.
+
+event.pageX					Devuelve la posición relativa del ratón en relación a 
+							la esquina izquierda del documento. 
+
+event.pageY					Devuelve la posición relativa del ratón con respecto 
+							a la esquina superior del documento.
+
+event.preventDefault()		Si llamamos a este método dentro de un evento, 
+							la acción predeterminada que se ejecutaría por 
+							este evento nunca será ejecutada.
+
+event.stopImmediatePropagation()	Previene que se ejecuten otras acciones que 
+									pudieran estar asociadas al evento.
+
+event.stopPropagation()			Previene que se ejecute cualquier 
+								evento que pudiera estar asociado a los padre 
+								del elemento dentro del árbol DOM.
+
+event.target				Es el elemento DOM que inició el evento
+
+event.timeStamp			Número en milisegundos desde el 1 de enero de 1970, 
+						hasta que el evento fue lanzado. 
+												
+event.which				Para eventos de teclado y ratón, este atributo indica 
+						el botón o la tecla que ha sido pulsada.
+
+
+
+EVENTOS
+
+.bind()			Nos permite asociar funciones a eventos de elementos 
+				tanto del DOM como del navegador.
+
+		$(document).ready(function(){
+		   $("a").bind(“click”, function(event){
+		     alert("Este mensaje se muestra cuando el usuario pincha en el enlace");
+		     event.preventDefault();
+		   });
+		 });
+
+		
+				podemos, desde asociar varios eventos simultáneamente, 
+				hasta pasar parámetros a eventos o crear nuestros propios eventos
+				
+		Asociando múltiples eventos
+
+		$('#foo').bind('mouseenter mouseleave', function() {
+		  alert('El ratón ha entrado o salido del elemento "foo."');
+		});
+
+
+
+			Otra forma de asociar varios eventos simultáneamente sería,
+			$('#foo').bind({
+			  click: function() {
+			    // Hacer algo en el click
+			  },
+			  mouseenter: function() {
+			    // Hacer algo en el mouseenter
+			  }
+			});
+
+
+
+			Pasando datos
+			
+			var message = 'Hola';
+			$('#hola').bind('click', {msg: message}, function(event) {
+			  alert(event.data.msg);
+			});
+
+
+			Eventos personalizados
+
+			//Creacion
+			$("#miElemento").bind("miEvento", function(e, miNombre, miValor){
+			        alert(“Hola ” + miNombre);
+			});
+			$("#boton").click(function () {
+			        $("#miElemento").trigger("miEvento", [ "Juan Carlos" ]);
+			});
+			
+			Esto provocaría que cuando un usuario pinche sobre el botón #boton, 
+			se lance el evento que he creado exclusivamente para el elemento #miElemento.
+
+.blur()		El evento blur se lanza sobre un elemento que acaba de perder el foco.
+			
+
+.click()	Evento lanzado al clickar con el raton
+
+
+.dblclick()	Exactamente igual que el evento anterior, pero se lanza cuando hay un 
+			doble click sobre el elemento.
+
+.focus()	Este evento se lanza cuando un elemento recibe el foco
+
+.focusin()	Evento muy parecido al anterior, 
+			Este evento permite saber cuando un elemento o cualquiera de sus hijos gana el foco. 
+			Por ejemplo, si tenemos el siguiente HTML,
+			
+.focusout()	Igual que el evento anterior, pero asociado a la pérdida del foco.
+
+.hover()	El evento hover se lanza cuando el ratón está encima del elemento 
+			sobre el que hemos enlazado el evento. Incluye la posibilidad de mouseover+mouseleave 
+
+.keydown()	Este evento se lanza siempre que el usuario pulsa una tecla, 
+			pero se envía sólo al elemento que tiene el foco en ese momento. 
+			
+.keypress()	Es muy similar al anterior evento, pero con sutiles diferencias. 
+
+.keyup()	El evento keyup se lanza cuando el usuario suelta la tecla que estaba pulsando
+
+.load()		El evento load se lanza tan pronto el elemento al que hemos asociado el evento 
+			ha terminado de cargarse por completo. 
+
+.mousedown()	El evento mousedown es lanzado cuando pinchamos en cualquier elemento. Es similar al evento onclick, la diferencia está en que este evento se lanza en cuando pinchamos, antes de soltar el botón.
+
+.mousemove()	El evento mousemove es enviado a cualquier elemento cuando el ratón está encima del elemento.
+
+.mouseout()		Es enviado a cualquier elemento cuando el ratón deja de estar encima del elemento.
+
+.mouseover()	Es enviado a cualquier elemento del HTML cuando el ratón entra 
+
+.mouseup()		Igual que el evento mousedown, pero se lanza al soltar el botón 
+				del ratón sobre el elemento que está gestionando el evento.
+.one()			Es igual que bind, pero en este caso el evento sólo se ejecuta una vez. 
+
+.resize()		resize se lanza cuando cambiamos el tamaño de la ventana. 
+				Sólo se envía al objeto window.
+
+.scroll()		El evento scroll se envía a los elementos que cambian su scroll
+				 ante una acción del usuario. Se aplica a los objetos ventana, 
+				 frames y elementos con la propiedad overflow CSS puesta en estado “scroll”.
+				 
+
+.select()	El evento select se lanza cuando el usuario selecciona un texto
+			 del elemento sobre el que se gestiona el evento.
+			 Este evento sólo se aplica a los textarea y a los input de tipo texto.
+
+.submit()	se lanza cuando un usuario está tratando de enviar un formulario. 
+
+.unbind()	Unbind permite desenlazar un evento del elemento que deseemos.
+			En el siguiente ejemplo de código se ve mejor,
+			var funcion = function() {
+			  alert('Mensaje  cuando pinchas');
+			};
+			$('#foo').bind('click', funcion);
+			$('#foo').unbind('click', funcion);
+
+.unload()   El evento unload se lanza cuando un usuario navega fuera de la página web o 
+			se dirige hacia otra parte de la web. Se ejecuta siempre, incluso si el 
+			usuario cierra el navegador.
+ */
+</script>
+
+</head>
+
+<body>
+
+</body>
+</html>

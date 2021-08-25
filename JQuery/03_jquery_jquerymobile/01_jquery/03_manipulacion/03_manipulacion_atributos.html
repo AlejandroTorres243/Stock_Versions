@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Manipulacion jQuery</title>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+/*
+
+attr() y removeAttr()
+	El método attr()  tiene dos formas de ser usado:
+	attr(nombre)
+	attr(nombre, valor)
+
+Con removeAttr(nombre), eliminamos el atributo en cuestión de todos los elementos seleccionados.
+	$(“p”).removeAttr(“id”);
+
+hasClass(), addClass(), removeClass(), toggleClass()
+
+De la misma forma que podemos acceder a los atributos, tambien tenemos formas de seleccionar
+ y manipular las clases (atributo class=””)
+	hasClass(clase)
+		hasClass(clase) Pregunta si los elementos seleccionados tienen la clase especificada
+	addClass(clase)
+		Con addClass(clase) añadimos la clase deseada a los elementos seleccionados.
+	RemoveClass(clase)
+		con removeClass(clase) eliminamos la clase especificada de los elementos seleccionados.
+	toggleClass(clase)
+		toggleClass() es una función algo más compleja, y tiene varias sintaxis. La más común 
+		es toggleClass(clase) donde se añade o se elimina la clase cada vez que se ejecute esa función.
+
+	Otras formas de manejarla puede ser añadir otro valor booleano donde se fuerza a añadir o eliminar (true o false) la clase.
+		
+	$(“p”).toggleClass(“verde”, true);
+		También es posible pasarle una función:
+		$('div.foo').toggleClass(function() {
+		  if ($(this).parent().is('.bar')) {
+		    return 'happy';
+		  } else {
+		    return 'sad';
+		  }
+		});
+
+
+val() Además con .val() podemos acceder al valor de los elementos input (value) 
+
+ */
+</script>
+
+</head>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Filtrado</title>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+/*
+
+Selector				Descripción
+eq( index )				Reduce el conjunto de elementos seleccionados a ún 
+						solo elemento.
+						
+filter( selector )		Elimina todos los elementos del conjunto de elementos 
+						seleccionados que no se corresponden con el filtro.
+						
+filter( fn(index) )		Elimina todos los elementos del conjunto de elementos 
+						seleccionados que no correspondan con la función especificada.
+						
+is( selector )			Comprueba si la selección actual con la expresión, y 
+						devuelve true si al menos uno de los elementos concuerda con el selector.
+						
+map( callback )			Traduce un conjunto de elementos en un objeto jQuery 
+						en otro  conjunto de valores en un array jQuery (que puede o no contener elementos)
+						
+not( selector )			Elimina de los elementos encontrados aquellos 
+						que no se correspondan con la selección
+						
+slice( start, [end] )	Selecciona un subconjunto de los elementos seleccionados
+
+
+El siguiente listado expone otros métodos útiles que puedes utilizar para 
+localizar varios elementos en el DOM.
+Selector				Descripción
+add( selector )			Añade más elementos que concuerden con el selector 
+						expuesto, al conjunto de elementos seleccionados anteriormente.
+						
+andSelf( )				Añade la selección actual a una selección anterior.
+
+children( [selector])	Coge los elementos hijos que correspondan con el 
+						selector dentro del conjunto seleccionado previamente
+						
+closest( selector )		Coge un conjunto de elementos conteniendo el elemento 
+						padre más cercano que coincide con el selector especificado, 
+						incluyendo al elemento inicial
+
+contents( )				Encuentra todos los nodos hijos dentro de los elementos
+						seleccionados (incluyendo nodos de texto), o el contenido
+						del documento si el documento es un iframe
+
+end( )					Revierte la operación destructiva más reciente, cambiando 
+						el set de elementos seleccionados a su estado previo.
+
+find( selector )		Busca en los elementos descendientes que se correspondan
+						 con los selectores especificados.
+
+next( [selector] )		Coge el siguiente elemento hermano
+
+nextAll( [selector] )	Coge todos los elementos hermanos despues del elemento actual
+
+parent( [selector] )	Coge el padre directo de un elemento. Si es llamado en un 
+						conjunto de elementos, devuelve un conjunto de los padres directos.
+
+parents( [selector] )	Consigue un conjunto de elementos conteniendo los ancestros
+						 únicos de los elementos seleccionados (a excepcion del elemento raíz)
+
+prev( [selector] )		Coge el elemento hermano anterior a los seleccionados actualmente
+
+prevAll( [selector] )	Encuentra todos los elementos hermanos anteriores al elemento actual
+
+siblings( [selector] )	Encuentra todos los hermanos de cada uno de los elementos seleccionados.
+
+
+ */
+</script>
+
+</head>
+
+<body>
+	<style>
+		div{
+			border: 1px solid #000;
+			padding: 5px;
+		}
+	</style>
+	<div class="A1">
+		<div class="child">A1-1</div>
+		<div class="child">A1-2</div>
+	 
+		<div class="A2">
+			<div class="child">A2-1</div>
+			<div class="child">A2-2</div>
+	 
+			<div class="A3">
+				<div class="child">A3-1</div>
+				<div class="child">A3-2</div>
+			</div>
+		</div>
+	</div>
+	<button>click!</button>
+</body>
+</html>

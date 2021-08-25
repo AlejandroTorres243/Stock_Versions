@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="autor" content="Manuel Higueras" />
+		<meta name="generator" content="Visual Studio Code" />
+		<meta name="copyright" content="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+		<meta name="robots" content="index, follow" />
+		<meta name="keywords" content="html, ejemplo xhtml, esqueleto xhtml" />
+		<meta name="description" content="Ejemplo de Esqueleto de XHTML 1.0 Trasitional" />
+        <title>Validaciones</title>
+        <link href="css/estilos.css" rel="stylesheet">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/Validaciones.js"></script>
+        <!--Plugin de JQuery Validation-->
+        <script src="js/jquery.validate.js"></script>
+        <script src="js/localization/messages_es.js"></script>
+        
+    </head>
+    <body>
+        <form class="cmxform" id="formulario" method="get" action="">
+		<fieldset>
+			<legend>Formulario Personal</legend>
+			<p>
+				<label for="cname">Nombre min(2 caracteres):</label>
+				<input id="cname" name="name" minlength="2" type="text" required>
+				<label id="cname-error" class="error" for="cname" style="display: none;"></label>
+			</p>    
+            <p>
+                <label for="cemail">E-Mail (required)</label>
+                <input id="cemail" type="email" name="email" required>
+            </p>
+            
+<!--            <div id="Demail">
+                <label>Email:</label>
+                <input type="text" />
+            </div>
+            <div id="Demail2">
+                 <label>Confirme email:</label>
+                <input type="text" />
+            </div>
+            <div id="Dpassw">
+                 <label>Password:</label>
+                <input type="password" />
+            </div>
+            <div id="Dconfpass">
+                <label>Confirm password:</label>
+                <input type="password" />
+            </div> -->
+            <button id = "boton" type="submit">Enviar</button>
+		</fieldset>
+        </form>
+    </body>
+</html>

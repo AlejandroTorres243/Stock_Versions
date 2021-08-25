@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>variables_operadores.html</title>
+		<meta http-equiv="keywords" content="enter,your,keywords,here" />
+		<meta http-equiv="description" content="A short description of this page." />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="js/jquery-1.5.1.js"></script>		
+		<!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+	</head>
+	<body>
+		<p>
+			This is my XHTML page.
+		</p>
+			<script language="JavaScript">
+			function suma(op1,op2){
+				return op1+op2;
+			}
+			function resta(op1,op2){
+				return op1-op2;
+			}
+			function multiplicacion(op1,op2){
+				return op1*op2;
+			}
+			function division(op1,op2){
+				return op1/op2;
+			}
+			function onInit(){
+				/*
+				var var1=1;
+				//sentencia if
+				if(var1==1){
+					document.write("es igual");
+				}else{
+					document.write("es distinto");
+				}
+				document.write("<br/>");
+				//sentencia switch
+				var idioma="castellano";
+				switch (idioma) {
+					case 'castellano' :
+						document.write("es castellano");
+						break;
+					case 'ingles' :
+						document.write("es ingles");
+						break;
+					case 'frances' :
+						document.write("es frances");
+						break;
+					case 'alemán' :
+						document.write("es aleman");
+						break;
+					default :
+						error ('Idioma no presente');
+				}
+				document.write("<br/>");
+				//Sentencia while
+				var lista = new Array(10);
+				var ind=0;
+				while (ind < 10) {
+					lista[ind] = ind;
+					ind++;
+				}
+				document.write("<br/>");
+				//sentencia do-while
+				var ind=0;
+				do {
+					document.write(lista[ind]);
+					ind++;
+				}while (ind < 10);
+				
+				//sentencia for
+				var ind;
+				for (ind=0; ind < 10; ind++)
+				{
+					document.write(lista[ind]);
+				}
+				
+				//Sentencia for-in
+				var item;
+				for (item in document) {
+					document.write(item + '<br>');
+				}
+				for (ind=0; ind < 10; ind++)
+				{
+					if(ind==1){
+						continue;
+					}
+					if(ind==3){
+						break;
+					}
+					document.write(lista[ind]);
+				}
+				document.write('<br>');
+				//ejercicio while
+				var lista = new Array(30);
+				var ind=0;
+				while (ind < 30) {
+					lista[ind] = ind;
+					ind++;
+				}
+				document.write("<br/>");
+				//sentencia do-while
+				var ind=0;
+				do {
+					document.write(lista[ind]);
+					ind++;
+				}while (ind < 30);
+				
+				//sentencia for
+				var ind;
+				for (ind=0; ind < 30; ind++)
+				{
+					document.write(lista[ind]);
+				}
+				
+				//Sentencia for-in
+				documento.write("window<br/>");
+				
+				var item;
+				for (item in window) {
+					document.write(item + '<br>');
+				}
+				documento.write("body<br/>");
+
+				for (item in document.body) {
+					document.write(item + '<br>');
+				}*/
+				var num1=10,num2=2;
+				document.write(suma(num1,num2));
+				document.write("<br/>");
+				document.write(resta(num1,num2));
+				document.write("<br/>");
+				document.write(multiplicacion(num1,num2));
+				document.write("<br/>");
+				document.write(division(num1,num2));
+				document.write("<br/>");	
+			}
+			$(document).ready(onInit);
+			 
+
+		</script>
+
+	</body>
+</html>

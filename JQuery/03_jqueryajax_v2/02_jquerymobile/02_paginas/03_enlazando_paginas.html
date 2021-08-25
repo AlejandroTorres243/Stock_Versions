@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- cuidado si no se coloca esto -->
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.1.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.1.0-rc.1.min.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page" data-title="Mi pagina"> <!-- automaticamente cambia el titulo de la pagina-->
+		<div data-role="header">
+		<h1>Enlazando paginas</h1>
+	</div>
+	<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="d">
+				<li data-role="list-divider">Enlaces que seran cargados via Ajax con transiciones de pagina</li>
+				<li><a href="../../index.html">Enlace al mismo dominio</a></li>
+				<li><a href="../pages/dialog.html" data-rel="dialog">Enlace a un dialogo: data-rel="dialog" (no almacenado en el historial del documento)</a></li>
+				<li data-role="list-divider">Enlaces que refrescaran la pagina</li>
+				<li><a href="http://www.jquery.com">Dominio externo</a></li>
+				<li><a href="../../index.html" rel="external">Enlace con rel="external"</a></li>
+				<li><a href="index.html" data-ajax="false">Enlace con data-ajax="false"</a></li>
+				<li><a href="../../index.html" target="foo">Enlace con target="loquesea"</a></li>
+				<li data-role="list-divider">Enlaces de email</li>
+				<li><a href="mailto:jdoe@foo.com">Email basico mailto:jdoe@foo.com</a></li>
+				<li><a href="mailto:jdoe@foo.com?cc=bill@bar.com&bcc=mark@abc.com&subject=Happy%20Birthday&body=Best%20wishes!">Mail con cc:, bcc:, asunto y cuerpo pre-rellenado</a></li>
+
+				<li data-role="list-divider">Enlaces de telefonos</li>
+				<li><a href="tel:15555555555">TElefono: tel:15555555555</a></li>
+				<li data-role="list-divider">Otros</li>
+				<li><a href="#"> un href="#" devolvera false</a></li>
+			</ul>
+	</div>
+</div><!-- /page -->
+</body>
+</html>

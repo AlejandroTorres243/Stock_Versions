@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+	/*
+
+//EXTENDER LAS OPCIONES 
+
+// inclusion de jquery
+$(document).bind("mobileinit", function(){
+  $.extend(  $.mobile , {
+    opcion: Valor
+  });
+  
+   $.mobile.allowCrossDomainPages = true;
+   $.support.cors = true;
+});
+
+// inclusion de jquerymobile
+
+activeBtnClass 					default: "ui-btn-active"
+
+activePageClass 				default: "ui-page-active"
+
+ajaxEnabled 					default: true
+
+allowCrossDomainPages			default: false
+
+defaultDialogTransition 		default: 'pop'
+
+defaultPageTransition 			default: 'slide'
+
+loadingMessage 					default: "loading"
+
+loadingMessageTextVisible 		default: false
+
+loadingMessageTheme 			default: "a"
+
+minScrollBack 					default: 250
+
+ns 								default: "" namespacing (espacios de nombre) para atributos data- (ojo con los CSS)
+		
+pageLoadErrorMessage 			default: "Error Loading Page"
+
+pageLoadErrorMessageTheme 		default: "e"
+
+
+
+
+
+
+//METODOS
+$.mobile.changePage(hacia, opciones);
+	hacia, puede ser string u objeto:
+		String: Ruta absoluta. ("about/us.html")
+		Object: Un objeto jquery ($("#about"))
+	options, puede ser opcional)
+		data (objeto o string,) solo si es una url, datos a enviar via ajax
+		dataUrl (string,	default: undefined) The URL to use when updating the browser location upon changePage completion. If not specified, the value of the data-url attribute of the page element is used.
+		reloadPage (boolean  false) Se usa solo si el "hacia" es una URL
+		showLoadMsg (boolean,	default:	true) Decide si mostrar o no mensaje de carga
+		transition (string,	 $.mobile.defaultPageTransition)
+		type (string, default: "get") get/post: solo cuando es una url
+
+
+Ejemplos:
+			
+$.mobile.changePage( "about/us.html", { transition: "slideup"} );
+
+//transition to the "search results" page, using data from a form with an ID of "search"" 	
+$.mobile.changePage( "searchresults.php", {
+	type: "post",
+	data: $("form#search").serialize()
+});
+
+//transition to the "confirm" page with a "pop" transition without tracking it in history	
+$.mobile.changePage( "../alerts/confirm.html", {
+	transition: "pop",
+	reverse: false,
+	changeHash: false
+});
+
+			
+			
+$.mobile.loadPage (url, opciones)
+	propiedades:
+		data (objeto o string,) solo si es una url, datos a enviar via ajax
+		reloadPage (boolean  false) Se usa solo si el "hacia" es una URL
+		type (string, default: "get") get/post: solo cuando es una url
+
+			
+//load the "about us" page into the DOM
+$.mobile.loadPage( "about/us.html" );
+
+//load a "search results" page, using data from a form with an ID of "search"
+$.mobile.loadPage( "searchresults.php", {
+	type: "post",
+	data: $("form#search").serialize()
+});
+			
+			
+$.fn.jqmData(), $.fn.jqmRemoveData() (method)
+
+$.mobile.showPageLoadingMsg(tema, texto, textOnly) mostrar pagina de "cargando""
+$.mobile.hidePageLoadingMsg()	Ocultarlo
+
+$.mobile.fixedToolbars.show([true]);
+$.mobile.fixedToolbars.hide([true]);
+
+//UTILIDADES
+$.mobile.path.parseUrl(url)
+
+//  var obj = $.mobile.path.parseUrl("http://jblas:password@mycompany.com:8080/mail/inbox?msg=1234");
+//
+//  obj.href:         http://jblas:password@mycompany.com:8080/mail/inbox?msg=1234&type=unread#msg-content
+//  obj.hrefNoHash:   http://jblas:password@mycompany.com:8080/mail/inbox?msg=1234&type=unread
+//  obj.hrefNoSearch: http://jblas:password@mycompany.com:8080/mail/inbox
+//  obj.domain:       http://jblas:password@mycompany.com:8080
+//  obj.protocol:     http:
+//  obj.authority:    jblas:password@mycompany.com:8080
+//  obj.username:     jblas
+//  obj.password:     password
+//  obj.host:         mycompany.com:8080
+//  obj.hostname:     mycompany.com
+//  obj.port:         8080
+//  obj.pathname:     /mail/inbox
+//  obj.directory:    /mail/
+//  obj.filename:     inbox
+//  obj.search:       ?msg=1234&type=unread
+//  obj.hash:         #msg-content
+
+
+$.mobile.path.isSameDomain(url1, url2)
+
+$.mobile.path.isRelativeUrl(url)
+$.mobile.path.isAbsoluteUrl(url)
+
+$.mobile.silentScroll(ejeY) //ojo no lanza los eventos.
+
+//propiedad
+$.mobile.activePage 
+	 */
+	</script>
+
+</body>
+</html>

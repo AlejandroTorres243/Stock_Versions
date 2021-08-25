@@ -1,0 +1,18 @@
+No vamos a crear plugins, si no que vamos a integrar algunos que ya existan.
+
+Ejercicio 1:
+	Notificaciones: Busca el plugin "jQuery Gritter" en Google, míra que es lo que hace
+	cómo lo hace y descargalo e integralo en la aplicación de alumnos, 
+	la que has modificado con el evento custom. 
+	
+	Lo que se quiere en el ejercicio es que SIN TOCAR el código original del ejercicio
+	puedas mostrar una notificación por pantalla en la que digas "Alumno borrado" y pongas
+	los datos del alumno.
+	
+Ejercicio 2:
+	Añade también notificaciones para que aparezcan mensajes a la hora de eliminar
+	un alumno, y borrar toda una clase.
+	Aquí sí necesitarás tocar (minimamente) el código original de la aplicación. 
+	
+	
+	 

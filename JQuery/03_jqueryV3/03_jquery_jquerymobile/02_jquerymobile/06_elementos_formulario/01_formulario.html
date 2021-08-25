@@ -1,0 +1,196 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- cuidado si no se coloca esto -->
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.1.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.1.0-rc.1.min.js"></script>
+</head> 
+
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Page Title</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+
+
+			<h2>Estructura</h2>
+			<p>la habitual</p>
+
+<code>
+&lt;form action=&quot;form.php&quot; method=&quot;post&quot;&gt;
+...
+&lt;/form&gt;
+</code>
+
+
+
+	<h2>Mini</h2>
+	<p> se puede utilizar data-mini="true" para versiones mas pequeñas</p>
+	 <label for="mini">Text Input:</label>
+	 <input type="text" name="name" id="mini" value="" data-mini="true" />
+	 <input type="text" name="name" id="mini" value="" />
+
+	<h2>Labels y acesibilidad</h2>
+
+
+<label for="username" class="ui-hidden-accessible">Username:</label>;
+<input type="text" name="username" id="username" value="" placeholder="Username"/>
+
+<div data-role="fieldcontain" class="ui-hide-label">
+	<label for="username">Username:</label>
+	<input type="text" name="username" id="username" value="" placeholder="Username" />
+</div>
+
+	</p>
+
+
+	<h2>Desactivar</h2>
+	
+	<div data-role="fieldcontain">
+     <label for="foo">Text Input:</label>
+     <input type="text" name="name" id="foo" value="" disabled />
+	</div>
+	
+	<div data-role="fieldcontain">
+	<fieldset data-role="controlgroup">
+    	<legend>Gender:</legend>
+         	<input type="radio" name="gender" id="radio-female" value="f" disabled />
+         	<label for="radio-female">Female</label>
+
+         	<input type="radio" name="gender" id="radio-male" value="m" disabled  />
+         	<label for="radio-male">Male</label>
+    </fieldset>
+    </div>
+
+	<div data-role="fieldcontain">
+	<label for="flip-s">Server status:</label>
+	<select name="flip-s" id="flip-s" data-role="slider" disabled >
+		<option value="off">Off</option>
+		<option value="on">On</option>
+	</select>
+    </div>    
+
+    <div data-role="fieldcontain">
+	<label for="slider">Max bandwidth:</label>
+	<input type="range" name="slider" id="slider" value="0" min="0" max="100" disabled />
+    </div>
+    
+	<div data-role="fieldcontain">
+		<label for="select-choice-x" class="select">Shipping:</label>
+		<select name="select-shipper" id="select-choice-x" disabled>
+			<option></option>
+			<option value="standard">Standard</option>
+			<option value="rush">Rush</option>
+			<option value="express">Express</option>
+			<option value="overnight">Overnight</option>
+		</select>
+	</div> 
+	
+	<p>Para desactivar enlaces "a" con data-role="button", hay que añadir una clase css "ui-disabled"</p>
+	
+	
+		<h2>Field containers, para un mejor estilo visual</h2>
+		
+		<div data-role="fieldcontain">
+ 			<label for="name">Text Input:</label>
+ 			<input type="text" name="name" id="name" value=""  />
+		</div>
+
+		<p>For additional examples, see the <a href="forms-all.html">form elements gallery</a></p>
+		
+		
+	<h2>Inicializacion de elementos</h2>
+	<p>Por defecto jquery mobile inicializa los elementos de forma automatica 
+	para darles ese aspecto</p>
+ 
+	<p>Si necesitas incrustar elementos de forma dinamica  puedes lanzar 
+	el evento <code>create</code> para lanzar la auto-inicializacion 
+	Se puede lanzar en cualquier elemento (por ejemplo el div page) 
+	Para que no tengas que inicializar cada elemento</p> 
+
+	<p>Por ejemplo esto seria para incrustar un formulario de login 
+	que nos pasen desde AJAX como codigo HTML</p>
+
+	<code>
+	$(" El nuevo selector con los widgets/elementos de formulario")
+	.appendTo( ".ui-page" ).trigger( "create" );
+	</code>
+
+	<h2>Refrescando elementos</h2>
+
+ 
+	<h4>Checkboxes:</h4>
+
+<code>
+$("input[type='checkbox']").prop("checked",true).checkboxradio("refresh");
+</code>
+
+<h4>Radios:</h4>
+<code>
+$("input[type='radio']").prop("checked",true).checkboxradio("refresh");
+</code>
+
+<h4>Selects:</h4>
+<code><pre>
+var myselect = $("#selectfoo");
+myselect[0].selectedIndex = 3;
+myselect.selectmenu("refresh");
+</pre></code>
+
+<h4>Sliders:</h4>
+<code>
+$("input[type='range']").val(60).slider("refresh");
+</code>
+
+<h4>Flip switches (they use slider):</h4>
+
+<code><pre>
+var myswitch = $("#selectbar");
+myswitch[0].selectedIndex = 1;
+myswitch.slider("refresh");
+</pre></code>
+
+	<h2>Prevenir la autoinicializacion</h2>
+	<p>Si quieres que algun elemento no pase al estilo visual de jQuery, 
+	solo a�ade data-role="none"</p>
+	
+<label for="foo">
+<select name="foo" id="foo" <strong> data-role="none"</strong>>
+	<option value="a" >A</option>
+	<option value="b" >B</option>
+	<option value="c" >C</option>
+</select>
+
+
+	<p>O la via programatica</p>
+	
+		<pre><code>
+$(document).bind('mobileinit',function(){
+	<strong>$.mobile.page.prototype.options.keepNative 
+		= "select, input.foo, textarea.bar";</strong>
+});
+		</code></pre>
+
+		
+	 </div>
+	 <label for="textarea">Textarea:</label>
+<textarea cols="40" rows="8" name="textarea" id="textarea" maxlength="20"></textarea>
+
+	 <!--  NOTE: Inline styles are for demo purposes only, please use external styles -->
+		<div data-role="footer" data-theme="a" class="ui-bar ui-grid-c">
+				<div class="ui-block-a"><h3 style="margin-top:10px;">Settings</h3></div>
+				<div class="ui-block-b"><label for="value" style="margin:8px 10px 0 0; text-align:right;">Price</label> </div>
+				<div class="ui-block-c"><input id="value" value="5,000"></div>	 
+				<div class="ui-block-d"><div style="margin:6px 0 0 10px;"><button type="submit" data-theme="b">Update</button></div></div>  
+	    </div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

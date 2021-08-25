@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+	/*
+
+	 
+Importante: 
+Usar pageInit(), no $(document).ready().
+
+
+Touch events
+tap			Se dispara tras un rapido evento completo de pulsacion
+taphold		Se dispara despues de completar un evento de pulsacion mantenida (aprox 1 seg)
+swipe		Se dispara cuando se hace un arrastre de 30px horizontal o mas 
+			(y menos de 20px verticalmente) en menos de 1 segundo
+			Se puede configurar:
+
+				scrollSupressionThreshold (default: 10px) – 
+					Limite para suprimir el scrooling
+				durationThreshold (default: 1000ms) – 
+					Limite de duracion para que no se considere swipe
+				horizontalDistanceThreshold (default: 30px) – 
+					Para que se considere swipe horizontal debe superar 30px
+				verticalDistanceThreshold (default: 75px) – 
+					Para que se considere swipe horizontal debe superar 30px
+
+swipeleft	Se dispara si ocurre un movimiento hacia la izq
+swiperight	Se dispara si ocurre un movimiento hacia la derecha
+
+Eventos de un raton virtual
+
+vmouseover	Evento normalizado para manejar eventos touch o mouseover
+vmousedown	Evento normalizado para manejar eventos touchstart o mousedown
+vmousemove	Evento normalizado para manejar eventos touchmove o mousemove
+vmouseup	Evento normalizado para manejar eventos touchend o mouseup
+vclick		Evento normalizado para manejar eventos touchend o click		
+			En dispositivos tactiles se lanza DESPUES de vmouseup
+
+vmousecancel Evento normalizado para manejar eventos de cancelación de touch o mouse
+
+Cuidado con el uso de vclick en dispositivos tactiles (webkit sintetizan mousedown mouseup y click como 300ms despues)
+
+Se recomienda usar click en vez de vclick cuando una acción es posible que 
+modifique el contenido por debajo de la zona donde se hizo la pulsación como cargar páginas
+o hacer efectos collapse/expand 
+
+
+
+Cambio de orientacion
+orientationchange  Cuando cambia la orientación. Se recibe un segundo parámetro "landscape" o "portrait"
+				   Se puede   $.mobile.orientationChangeEnabled = false to let the fallback resize code trigger your bindings.
+
+Eventos de scroll
+
+scrollstart			Cuando se inicia el scroll. Ojo que iOS congela la manipulacion del DOM
+				durante el scroll, y se aplica al finalizar
+
+scrollstop		Cuando finaliza el scroll
+
+Carga de pagina
+
+pagebeforeload	Se dispara antes de hacer alguna peticion de carga. 
+				
+pageload		Cuando la pagina ha sido cargada e insertada en el DOM
+
+pageloadfailed	Cuando ha fallado la carga de la pagina.	
+
+Cambio de paginas
+
+pagebeforechange	Antes de cambiar la pagina, salta antes de cualquier carga o transición
+
+pagechange			Se dispara cuando se ha terminado de cargar la pagina dentro del dom y todas las transiciones se han completado
+
+pagechangefailed	Se dispara si se ha habido algun tipo de error
+
+Transiciones de página
+
+pagebeforeshow	Se dispara en las paginas a mostrar, antes de que se dispare
+				la animación de transicion
+pagebeforehide  Se lanza en la pagina a ocultar antes de que se dispare
+				la animación de transición	
+
+pageshow		Se lanza al terminar la transicion de mostrado (antes de pagechange)
+
+pagehide		Se lanza al terminar la transición de ocultar (antes de pagechange)
+
+Inicializacion de paginas
+
+pagebeforecreate	Disparado antes de inicializar la pagina (que ya ha sido insertada en el dom)
+				El momento para meter los atributos data- via javascript
+
+pagecreate		La pagina ha sido creada en el dom pero los widgets aun no se han inicializado
+				El momento para arrancar plugins propios
+
+pageinit		La pagina ha sido inicializada y maquetada
+
+
+Eliminacion de paginas
+
+pageremove		Al borrar una pagina
+
+Eventos del layout
+
+updatelayout	Lanzado por cpomponetentes dentro del framework que muestran/ocultan contenido dinamicamente
+
+
+	 */
+	</script>
+
+</body>
+</html>

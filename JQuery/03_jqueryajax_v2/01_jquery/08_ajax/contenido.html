@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AJAX con jQuery</title>
+<script src="js/jquery.js"></script>
+<script src="js/modificamenu.js"></script>
+</head>
+<body>
+	<script>
+/*
+	$(document).ready(function(){
+
+		$("#new-nav li a").click(
+			function(event){
+				var enlace=event.currentTarget.attr("href");
+				$("#contenido").load(enlace+ " #contenido");
+				event.preventDefault();
+			}
+		);		
+		$("#link-home").click(
+				function(event){
+					$("#contenido").load("ajaxbase.html #contenido");
+					event.preventDefault();
+				}
+			);
+		$("#link-contenido").click(
+			function(event){
+				$("#contenido").load("contenido.html #contenido");
+				event.preventDefault();
+			}
+		);
+		
+	});
+	
+*/	
+</script>
+<ol id="new-nav">
+<li><a href="ajaxbase.html">Inicio</a></li>
+<li><a href="contenido.html">Contenido</a></li>
+</ol>
+<div id="wrapper">
+<div id="contenido">
+<h1>Listado de Productos</h1>
+<ul>
+<li>Nexus 4 (Disponible)</li>
+<li>Nexus 7 (Disponible)</li>
+<li>Nexus 5 (No Disponible)</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

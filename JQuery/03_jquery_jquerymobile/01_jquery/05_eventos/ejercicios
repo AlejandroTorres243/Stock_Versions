@@ -1,0 +1,9 @@
+Ejercicio 1:
+	Partiendo del ultimo ejercicio de manipulación del dom (los alumnos)
+	Utiliza .hover() para cambiar el color del texto a verde de cada registro
+	al pasar el raton por encima.
+	
+Ejercicio 2:
+	Crea un evento propio "alta_alumno" que se ejecutará nada mas insertar
+	un alumno en localStorage, al lanzarlo será cuando se haga todo el proceso de inserción
+	en las tablas.

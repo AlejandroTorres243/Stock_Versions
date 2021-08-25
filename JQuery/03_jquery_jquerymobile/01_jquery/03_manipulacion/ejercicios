@@ -1,0 +1,94 @@
+Previo:
+	Todos los ejercicios los vamos a realizar en principio en la plantilla básica.
+	Por lo que dentro del section principal vamos a crear un <article>
+	
+	de forma que quedaría algo así
+	
+	<section id="contenido">
+		<article id="ejercicio1">
+			<header>
+				<h2>Ejercicio 1</h2>
+				Texto del enunciado del ejercicio.
+			</header>
+			<!-- contenido html del ejercicio 1 -->			
+		</article>
+	</section>
+	
+	Por cada ejercicio usaremos un fichero html distinto para que no tengamos 
+	problemas con codigo jquery que pueda estar interfiriendo con otros
+	ejercicios.
+	
+Ejercicio 1:
+	Haz quef funcione lo siguiente:	
+	<ul>
+	<li>Primer item.</li>
+	<li>Segundo item.</li>
+	<li>Tercer item.</li>
+	<li>Cuarto item.</li>
+	</ul>
+	<input type="button" id="boton1" value="Eliminar la lista completa."><br>
+	<input type="button" id="boton2" value="Restaurar Lista"><br>
+	<input type="button" id="boton3" value="Añadir un elemento al final de la lista"><br>
+	<input type="button" id="boton4" value="Añadir un elemento al principio de la lista"><br>
+	<input type="button" id="boton5" value="Eliminar el último elemento."><br>
+	<input type="button" id="boton6" value="Eliminar el primer elemento."><br>
+	<input type="button" id="boton7" value="Eliminar el primero y segundo elemento."><br>
+	<input type="button" id="boton8" value="Eliminar los dos últimos."><br>
+
+Ejercicio 2:
+	Vamos a usar otra vez localStorage
+	Crea un formulario con un input para la clave y un textarea para el valor.
+	Tambien crea una tabla con las cabeceras "clave" y "valor"
+	Al entrar en la web se deberan rellenar (con jquery) la tabla.
+	Cada vez que se añada un elemento este será añadido al final de la tabla. (los datos tambien cogelos con jQuery)
+	
+Ejercicio 3:
+	Crea un formulario con datos de alumnos de un colegio:
+		Nombre, 
+		Apellido1, 
+		apellido2, 
+		género (radiobutton), 
+		clase (selector con los valores "primero", "segundo", "tercero")
+	
+	Al igual que el ejercicio anterior, usa localStorage (recuerda, no 
+	se pueden guardar objetos, solo cadenas, asi que usa JSON)
+	
+	al entrar en la página se deberán mostrar los alumnos en una tabla.
+	Al añadir el alumno se añadira al final de la tabla. 
+	
+	
+Ejercicio 4:
+	Modifica el ejemplo anterior para tener 3 tablas, una para primero, otra para segundo
+	y otra para tercero.
+	
+	Al añadir el alumno se añadira al final de la tabla correspondiente.
+	
+Ejercicio 5:
+	Partiendo del ejercicio anterior, elimina la columna de género. En su lugar
+	añade un atributo personalizado genero="" a la fila, con el valor necesario.
+	
+	Añade la clase css necesaria (sin usar jQuery, es decir en un archivo .css) para que
+	las filas con chicos tenga un color de fondo azul clarito y las chicas rosa.
+	
+	Además debajo de cada tabla habrá un texto que indique cuantos niños y niñas hay en esa clase,
+	y otro al inicio del documento (antes de las tablas) donde diga alumnos totales, y cuantos chicos y 
+	chicas hay en total.
+
+Ejercicio 6:
+	Partiendo del ejercicio anterior
+	Añade un boton para borrar de forma individual cada alumno. El borrado será con jQuery (además de en localStorage)
+	
+Ejercicio 7:
+	Partiendo del ejercicio anterior
+	Añade al inicio de cada tabla un boton para eliminar todos los alumnos de esa clase (además de en localStorage)
+	Avisame para que explique .each() ;P
+	
+Ejercicio 8:
+	Partiendo del ejercicio anterior
+	Crea las clases css necesarias y el codigo jQuery necesario para que cada vez que se haga click
+	en una fila de cualquiera de las tablas, se cambie el color de fondo a naranja (y desaparezca ese color de fondo
+	al volver a hacer click), como si estuviesemos seleccionando los elementos.
+	
+Ejercicio 9:
+	Partiendo del ejercicio anterior, añade un boton que al pulsarlo coja los elementos seleccionados y muestre un alert
+	con los datos de todos los alumnos (cogiendo los datos de localStorage).

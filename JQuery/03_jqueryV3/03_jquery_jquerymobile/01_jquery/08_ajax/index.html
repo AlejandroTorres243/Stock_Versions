@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AJAX con jQuery</title>
+<script src="js/jquery.js"></script>
+</head>
+<body>
+	<script>
+	/*
+	
+La sintaxis básica con jQuery es la siguiente:
+ 
+	$.ajax(opciones);
+	
+Aquí un ejemplo básico de funcionamiento con ajax
+*/
+
+function muestraError(xmlHttpRequest, texto_error, obj_excepcion){
+	
+}
+
+function procesaRespuesta(data){
+	
+}
+
+function peticion(){
+	$.ajax({
+	  url: '/ruta/hasta/pagina.php',
+	  type: 'POST',
+	  async: true,
+	  data: 'parametro1=valor1&parametro2=valor2',
+	  success: procesaRespuesta,
+	  error: muestraError
+	});
+}
+
+/*
+ Algunas de las opciones de ajax más usadas:
+async			Indica si la petición es asíncrona. Su valor por defecto es true, 
+				el habitual para las peticiones AJAX
+				
+beforeSend		Permite indicar una función que modifique el objeto XMLHttpRequest 
+				antes de realizar la petición. El propio objetoXMLHttpRequest se 
+				pasa como único argumento de la función
+				
+				
+contentType		Indica el valor de la cabecera Content-Type utilizada para 
+				realizar la petición. Su valor por defecto es 
+				application/x-www-form-urlencoded
+				
+data			Información que se incluye en la petición. Se utiliza para 
+				enviar parámetros al servidor. Si es una cadena de texto, se envía 
+				tal cual, por lo que su formato debería ser parametro1=valor1&parametro2=valor2. 
+				También se puede indicar un array asociativo de pares clave/valor 
+				que se convierten automáticamente en una cadena tipo query string
+				
+dataType		El tipo de dato que se espera como respuesta. Si no se indica ningún valor, 
+				jQuery lo deduce a partir de las cabeceras de la respuesta. 
+				Los posibles valores son: xml (se devuelve un documento XML 
+					correspondiente al valor responseXML), 
+					html (devuelve directamente la respuesta del servidor 
+						mediante el valor responseText), script (se evalúa 
+						la respuesta como si fuera JavaScript y se devuelve el 
+						resultado) y 
+					json (se evalúa la respuesta como si fuera JSON y se 
+						devuelve el objeto JavaScript generado)
+
+error			Indica la función que se ejecuta cuando se produce un error 
+				durante la petición. Esta función recibe el objetoXMLHttpRequest 
+				como primer parámetro, una cadena de texto indicando el error 
+				como segundo parámetro y un objeto con la excepción producida 
+				como tercer parámetro
+				
+ifModifie		Permite considerar como correcta la petición solamente si la 
+				respuesta recibida es diferente de la anterior respuesta. 
+				Por defecto su valor es false
+				
+processData		Indica si se transforman los datos de la opción data para 
+				convertirlos en una cadena de texto. Si se indica un valor 
+				false, no se realiza esta transformación automática
+
+success			Permite establecer la función que se ejecuta cuando una petición 
+				se ha completado de forma correcta. La función recibe como primer 
+				parámetro los datos recibidos del servidor, previamente formateados 
+				según se especifique en la opción dataType
+
+timeout 		Indica el tiempo máximo, en milisegundos, que la petición espera 
+				la respuesta del servidor antes de anular la petición
+				
+type			El tipo de petición que se realiza. Su valor por defecto es GET, 
+				aunque también se puede utilizar el método POST
+				
+url				La URL del servidor a la que se realiza la petición
+
+ */
+
+/*
+ Otras formas de  hacer peticiones ajax:
+ 
+// Petición GET con envío de parámetros y función que
+// procesa la respuesta
+$.get('/ruta/hasta/pagina.php',
+  { articulo: '34' },
+  function(datos) {
+    alert('Respuesta = '+datos);
+  });
+  
+  o
+  
+// Petición GET con envío de parámetros y función que
+// procesa la respuesta
+$.get('/ruta/hasta/pagina.php',
+  { articulo: '34' },
+  function(datos) {
+    alert('Respuesta = '+datos);
+  });
+  
+ o
+
+$.post('/ruta/hasta/pagina.php',
+  { articulo: '34' },
+  function(datos) {
+    alert('Respuesta = '+datos);
+  }); 
+  
+Se puede añadir tambien una opción para decir que te devuelva los datos en json:
+
+
+$.post('/ruta/hasta/pagina.php',
+  { articulo: '34' },
+  function(datos) {
+    alert('Respuesta = '+datos.nombre);
+  }, "json");
+
+Otra opción es utilizar el metodo $.load();
+
+ 
+  
+ */
+
+$(document).ready(function(){
+	$("button.load").click(ejemploLoad)
+	});
+	
+	
+function ejemploLoad(){
+	  $("#new-nav").load("otro.html #footerNavigation li");
+}
+</script>
+<ol id="new-nav">
+</ol>
+<button class="load">Ejemplo load</button>
+</body>
+</html>

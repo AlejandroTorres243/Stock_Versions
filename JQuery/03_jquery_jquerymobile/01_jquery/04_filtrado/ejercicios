@@ -1,0 +1,80 @@
+	Estructura para los ejercicios 1,2,3,4
+	
+	<div id="mi_div" class="clase1 clase2 clase3">
+		Texto
+	</div>
+	<div id="mi_div2" class="clase2">
+		Texto
+	</div>
+	<div id="mi_div3" class="clase1 clase3">
+		Texto
+	</div>
+	<div id="mi_div4" class="clase2 clase3">
+		Texto
+	</div>
+	<div id="mi_div5" class="clase3">
+		Texto
+	</div>
+	<button>click!</button>
+
+Ejercicio 1:	
+	Al pulsar en el boton selecciona todos los div y 
+	filtra el que tenga id mi_div5, colocale un borde de 1 pixel solido y rojo
+	
+Ejercicio 2:
+	Al pulsar en el boton selecciona todos los div y
+	filtra el que tenga id mi_div2 y los que tengan la clase2 y clase 3 y colocales
+	un border de 1 pixel solido y rojo
+	
+Ejercicio 3:
+	Al pulsar en el boton selecciona todos los div y
+	filtra el que tenga id mi_div2 y los que tengan la clase2 y clase 3 y colocales
+	un border de 1 pixel solido y rojo
+	
+Ejercicio 4:
+	Al pulsar en el boton selecciona todos los div y
+	filtra los que tengan indice 2 o 3 y colocales
+	un border de 1 pixel solido y rojo
+	
+Estructura para los ejercicios: 5, 6, 7
+	<style>
+		div{
+			border: 1px solid #000;
+			padding: 5px;
+		}
+	</style>
+	<div class="A1">
+		<div class="child">A1-1</div>
+		<div class="child">A1-2</div>
+	 
+		<div class="A2">
+			<div class="child">A2-1</div>
+			<div class="child">A2-2</div>
+	 
+			<div class="A3">
+				<div class="child">A3-1</div>
+				<div class="child">A3-2</div>
+			</div>
+		</div>
+	</div>
+	<button>click!</button>
+	
+	
+Ejercicio 5:
+	Al pulsar el boton, encuentra todos los elementos hijos directos del elemento con clase A1
+	y cambia su color de fondo a rojo.
+	
+Ejercicio 6:
+	Crea otros 2 botones más al pulsar el primer boton, encuentra todos los hijos con clase child
+	del elemento con clase A1 y colocales fondo rojo
+	Al pulsar el segundo boton, todos los hijos con clase child del elemento con clase A2
+	 y colocales fondo rojo
+	Al pulsar el tercer boton, todos los hijos con clase child del elemento con clase A3.
+	 y colocales fondo rojo
+	Resetea el color de fondo a blanco en cada acción. 
+	
+Ejercicio 7:
+	Al pulsar el boton busca el padre del elemento A3 y colocale fondo rojo.
+	
+Ejercicio 8:
+	Al pulsar el boton busca a todos los hermanos del elemento A3.

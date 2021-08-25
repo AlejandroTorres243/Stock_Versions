@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- cuidado si no se coloca esto -->
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0-rc.1.min.css" />
+	<script src="js/jquery.js"></script>
+	
+	<script src="js/jquery.mobile-1.1.0-rc.1.min.js"></script>
+	<script>
+	function mifuncion(){
+		alert("click");
+	}
+	$(document).bind("pageinit", function(){
+		$("#mi_a").click(mifuncion);
+		$("button").click(mifuncion);
+	});
+	</script>
+</head> 
+
+<body>
+<div data-role="page" id="cacheMe" data-dom-cache="true">
+	<div data-role="header" data-position="fixed">
+		<a href="index.html" data-icon="delete">Cancel</a>
+		<h1>Edit Contact</h1>
+		<a href="index.html" data-icon="check">Save</a>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#">One</a></li>
+				<li><a href="#">Two</a></li>
+				<li><a href="#">Three</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div>
+
+
+	<div data-role="content">	
+		<button>boton</button>
+		<a id="mi_a" href="#">haz click aqui</a>
+		<p>Contenido de barra persistente 2</p>
+		<p>Ojo que esta se queda cacheada</p>
+			
+	</div><!-- /content -->
+
+	<div data-role="footer" data-id="footer1" data-position="fixed" > <!--ojo no hace falta class="ui-bar" -->
+		<div data-role="navbar" data-iconpos="bottom"> 
+			<ul>
+				<!-- atencion al class="ui-btn-active ui-state-persist"-->
+				<li><a href="06_barras_persistentes1.html"  data-icon="grid">Persistente 1</a></li>
+
+				<li><a href="06_barras_persistentes2.html" class="ui-btn-active ui-state-persist" data-icon="gear">Persistente2</a></li>
+			</ul>
+		</div><!-- /navbar -->
+		
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

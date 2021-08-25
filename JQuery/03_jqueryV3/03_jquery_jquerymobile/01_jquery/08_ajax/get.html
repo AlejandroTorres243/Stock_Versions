@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AJAX con jQuery</title>
+<script src="js/jquery.js"></script>
+</head>
+<body>
+	<script>
+	$(document).ready(function(){
+
+		$("#new-nav li a").click(
+			function(event){
+				var url=$(this).attr("href");
+				//alert(enlace);
+				$.get(url,
+					function(data){
+						alert(data);
+					}
+				);
+				event.preventDefault();
+			}
+		);
+	});
+	</script>
+<h1>Menu html completo con #id</h1>
+<ol id="new-nav">
+<li><a id="link-home" href="ajaxbase.html">Inicio</a></li>
+<li><a id="link-contenido" href="contenido.html">Contenido</a></li>
+</ol>
+<div id="wrapper">
+<div id="contenido">
+<h1>Bienvenida</h1>
+</div>
+</div>
+</body>
+</html>

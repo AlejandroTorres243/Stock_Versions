@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>variables_operadores.html</title>
+		<meta http-equiv="keywords" content="enter,your,keywords,here" />
+		<meta http-equiv="description" content="A short description of this page." />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="js/jquery-1.5.1.js"></script>		
+		<!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+	</head>
+	<body>
+		<script language="JavaScript">
+			var Persona= function(nombre,edad){
+					this.nombre=nombre;
+					this.edad=edad;
+			}
+			Persona.prototype.nac="";
+			Persona.prototype.comer=function (que){
+				document.write("he comido "+que);
+			}
+			var Ciudadano= function (dir){
+				this.dir=dir;
+			}
+			Ciudadano.prototype=new Persona("","");
+			function onInit(){
+				var unapersona= new Persona("pepe",27);
+				document.write(unapersona.nombre);
+				document.write("<br/>");
+				document.write(unapersona.edad);
+				unapersona.nac="Vitoria";
+				document.write("<br/>");
+				document.write(unapersona.nac);
+				document.write("<br/>");
+				unapersona.comer("chuleton");
+				document.write("<br/>");
+				var unciudadano= new Ciudadano("Vitoria");
+				unciudadano.nombre="Pepe";
+				document.write(unciudadano.nombre);
+				document.write("<br/>");
+				document.write(unciudadano.dir);
+				document.write("<br/>");
+				unciudadano.comer("Pasta!");
+				document.write("<br/>");
+			}
+			$(document).ready(onInit);
+			 
+
+		</script>
+	</body>
+</html>
