@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="PersistenciaMemory2">
+        <wb-resource deploy-path="/" source-path="/src"/>
+        <dependent-module archiveName="Web01.war" deploy-path="/" handle="module:/resource/Web2/Web2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="persistenciaCore.jar" deploy-path="/" handle="module:/resource/persistenciaCore/persistenciaCore">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="persistenciaMemory.jar" deploy-path="/" handle="module:/resource/persistenciaMemory/persistenciaMemory">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Dominio.jar" deploy-path="/" handle="module:/resource/Dominio/Dominio">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Servicios.jar" deploy-path="/" handle="module:/resource/Servicios/Servicios">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="PersistenciaUtils.jar" deploy-path="/" handle="module:/resource/PersistenciaUtils/PersistenciaUtils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

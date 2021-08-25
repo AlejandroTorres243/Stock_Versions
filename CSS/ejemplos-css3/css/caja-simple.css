@@ -1,0 +1,15 @@
+#cajas{
+    border: 1px solid blue;
+    overflow: hidden;
+}
+#cajas div{
+    color: #00b7f5;
+    height: 50px;
+    width: 100px;
+    border: 1px solid red;
+    float: right;
+    text-align: center;
+}
+#cajas div p{
+    margin-top: 15%;
+}

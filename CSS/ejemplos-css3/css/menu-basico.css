@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+}
+/*
+Main header
+ */
+#main_header{
+    overflow: hidden;
+    border: 1px solid red;
+}
+#main_header #logo{
+    float: left;
+    width: 200px;
+    border: 1px solid red;
+}
+#main_header #logo img{
+    /*width: 180px;*/
+}
+#main_header nav{
+    float: right;
+    border: 1px solid red;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+/*
+Main menu
+ */
+#main_menu{
+    border: 1px solid red;
+}
+#main_menu ul{
+    border: 1px solid blue;
+    margin: 0;
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    overflow: hidden;
+}
+#main_menu ul li{
+    border: 1px solid green;
+    float: left;
+    margin-left: 10px;
+    background-color: #A70121;
+    padding: 10px;
+}
+#main_menu ul li a{
+    border: 1px solid gray;
+    text-decoration: none;
+    color: white;
+}
+
+.mi_section{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.main_col{
+    background-color: grey;
+    padding: 10px;
+    color: white;
+    background-color: #EF3E36;
+}
+.main_col h1{
+    background-color: #A70121;
+}
+.main_col p{
+}
+.mi_section .main_col.un_tercio{
+    width: 28%;
+    float: left;
+    margin-left: 2.5%;
+}
+.mi_section .main_col.un_cuarto{
+    width: 68%;
+    float: left;
+    margin-left: 2.5%;
+}
+.mi_section .main_col.tres_cuartos{
+    width: 18%;
+    float: left;
+    margin-left: 2.5%;
+}
+
+
+.main_col h1{
+    text-align: center;
+}
+
+/*
+Footer section
+ */
+footer{
+    overflow: hidden;
+    margin-top: 20px;
+    background-color: #A70121;
+}
+footer div{
+    float: left;
+    margin-left: 40px;
+}
+footer nav{
+    float: right;
+    margin-right: 40px;
+}

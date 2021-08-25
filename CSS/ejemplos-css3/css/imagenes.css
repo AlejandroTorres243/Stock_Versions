@@ -1,0 +1,11 @@
+img {
+    width: 100%;
+    height: auto;
+}
+div.conFondo {
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/img_flowers.jpg');
+    background-size: cover;
+    border: 1px solid red;
+}

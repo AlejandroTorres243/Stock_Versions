@@ -1,0 +1,74 @@
+header{
+    width: 100%;
+    overflow: hidden;
+    background: greenyellow;
+}
+div, h1, h2{
+    background: gray;
+    box-sizing: border-box;
+    width: 50%;
+    float:left;
+}
+h2{
+    width: 46%;
+    float: left;
+    margin:2%;
+    padding: 0px;
+    border: 2px solid black;
+}
+.div3{
+    margin:2%;
+    width: 46%;
+    float:left;
+}
+/*
+.div3 {
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid blue;
+    box-sizing: content-box;
+}
+
+.div4 {
+    width: 300px;
+    height: 100px;    
+    padding: 10px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.div5 {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid red;
+    box-sizing: padding-box;
+}
+
+.div6{
+    width: 100px;
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.div7{
+    width: 100px;
+    height: 100px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.div8{
+    width: 150px;
+    height: 350px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+.div9 {
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: scroll;
+}
+*/

@@ -1,0 +1,43 @@
+h1 ~ h2
+{
+	color:blue;
+}
+h1 + h2 {
+	color:red;
+}
+
+
+
+ul li:nth-child(2){
+	background: red;
+}
+
+ul li:nth-last-child(2){
+	background: blue;
+}
+ul li:empty{
+	display: none;
+}
+ul li:first-child{
+	background: #C077C0;
+}
+ul li:last-child{
+	background: pink;
+}
+
+div h2:nth-of-type(2){
+	background: red;
+}
+
+div h2:nth-last-of-type(1){
+	background: red;
+}
+/*
+div *:nth-child(3){
+	background: red;
+}
+*/
+
+div p:not(.molona){
+	color:blue;
+}

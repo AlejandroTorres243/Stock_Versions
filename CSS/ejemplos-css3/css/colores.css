@@ -1,0 +1,30 @@
+div.opa {
+    background-color: red;
+    opacity: 0.5;
+    filter: Alpha(opacity=50); /* IE8 and earlier */
+}
+div.opa-rgba{
+	background-color: rgba(255,0,0,0.8);
+}
+div.opa-hsl{
+	background-color: hsl(0, 100%,50%);
+}
+div.opa-hsla{
+	background-color: hsla(240,100%,50%,0.2);
+}
+div.opa-hsla .np-tras{
+	opacity: 1;
+	width: 100%;
+}
+.otro p{
+	width: 50%;
+	color: rgba(255,0,0,0.2);
+}
+.otro{
+	width: 50%;
+	background-color: hsla(0,100%,50%,0.2);
+	opacity: 1;
+}
+
+
+ 
