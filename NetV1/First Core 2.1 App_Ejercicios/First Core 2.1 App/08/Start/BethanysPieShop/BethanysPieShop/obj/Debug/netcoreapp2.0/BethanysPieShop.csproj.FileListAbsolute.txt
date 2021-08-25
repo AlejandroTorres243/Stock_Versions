@@ -1,0 +1,13 @@
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.0\bower.json
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.0\BethanysPieShop.deps.json
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.0\BethanysPieShop.runtimeconfig.json
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.0\BethanysPieShop.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.0\BethanysPieShop.dll
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.0\BethanysPieShop.pdb
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.0\BethanysPieShop.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.0\BethanysPieShop.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.0\BethanysPieShop.AssemblyInfo.cs
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.0\BethanysPieShop.dll
+C:\Users\AlumnoGTI\Desktop\First Core 2.1 App_Ejercicios\First Core 2.1 App\08\Start\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.0\BethanysPieShop.pdb
