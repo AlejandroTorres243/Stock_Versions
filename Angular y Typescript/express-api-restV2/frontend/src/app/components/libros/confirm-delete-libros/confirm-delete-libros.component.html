@@ -1,0 +1,13 @@
+<div>
+  <h2 mat-dialog-title>Confirmación de Diálogo</h2>
+  <hr>
+  <mat-dialog-content>
+    A continuación se borrará definitivamente este Libro
+    <strong>{{data}}</strong>
+  </mat-dialog-content>
+  <hr>
+  <mat-dialog-actions>
+    <button md-raised-button (click)="onCloseConfirm()">CONFIRMAR</button>&nbsp;
+    <button md-raised-button (click)="onCloseCancel()">CANCELAR</button>
+  </mat-dialog-actions>
+</div>

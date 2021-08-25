@@ -1,0 +1,11 @@
+<p>{{nombre}}</p>
+<p>{{1+1}}</p>
+<!--Binding desde ts hacia html con corchetes-->
+<img [src]="miimagen" [width] = "ancho" px>
+<!--Binding desde html  -->
+
+<p>{{contador}}</p>
+
+<input type="button" (click)="pulsaste()" value="Pulsar"/>
+<input type="button" (click)="incrementar()" value="incrementa"/>
+<input type="button" (click)="decrementar()" value="decrementa"/>

@@ -1,0 +1,37 @@
+body {
+    background-color: #01426a;
+}
+
+#sectionbody{
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
+.modelcolum{
+    align-items: center;
+    background-color: whitesmoke;
+    color: #53565a;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+#login, #pass{
+    padding-left: 15px;
+}
+
+#pass{
+    padding-bottom: 10px;
+}
+
+#title{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.bot_subm{
+    margin-left: 100px;
+    margin-bottom: 10px;
+}

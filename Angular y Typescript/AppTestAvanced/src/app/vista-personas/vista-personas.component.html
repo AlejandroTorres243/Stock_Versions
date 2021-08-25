@@ -1,0 +1,28 @@
+
+
+<h3>Filtro</h3>
+<input type="text" name="filtro" [(ngModel)]="filtroNombre" placeholder="Ej: A(lex)"/>
+<h3>Lista Personas</h3>
+<table border="1">
+
+  <tr *ngFor="let persona of listaPersonas">
+    <td>{{persona.nombre}}</td>
+    <td>{{persona.apellido}}</td>
+    <td>{{persona.edad}}</td>
+    <td><input type="button" (click)="borrar(persona)" value="Borrar"></td>
+  </tr>
+
+</table>
+
+<form (submit)="insertar()">
+
+  nombre: <input type="text" name="nombre" [(ngModel)]="personaNueva.nombre"> <br>
+  apellidos: <input type="text" name="apellidos" [(ngModel)]="personaNueva.apellidos"> <br>
+  edad: <input type="text" name="edad" [(ngModel)]="personaNueva.edad"> <br>
+  <input type="submit" value="insertar">
+
+</form>
+
+{{personaNueva?.nombre}}
+{{personaNueva?.apellidos}}
+{{personaNueva?.edad}}

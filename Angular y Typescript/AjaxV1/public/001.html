@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Ajax</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            console.log("pagina cargada");
+
+
+
+            $("#botonajax").click(function () {
+                console.log("has pulsado");
+               /* $.get("personas", function (personas1) {
+                    dibujaTabla(personas1);*/
+                   /* $.get("personas2", function (personas2) {
+                        
+                        dibujaTabla(personas2);
+                    })*/
+                 /*   
+                })
+                 $.get("personas2", function (personas) {
+                     dibujaTabla(personas);
+                 })*/
+
+                 let promesa1 = $.get("personas").promise();
+                 let promesa2 = $.get("personas2").promise();
+                 let promesa3 = $.get("personas3").promise();
+                 
+                 // ESTO ES UNA PROMESA DE UNA MEJOR MANERA
+                 /*promesa1.then(function(datos1){
+                     dibujaTabla(datos1);
+                 })
+
+                 promesa2.then(function(datos2){
+                     dibujaTabla(datos2);
+                 });*/
+                 
+                 //PERFECCIONANDO LA PROMESA recordar JQuery y TD
+
+                 $.when(promesa1, promesa2, promesa3).done(function(datos1,datos2,dato3){
+                    //dibujaTabla(datos1[0]);
+                    //dibujaTabla(datos2[0]);
+                    //dibujaTablaSuma(dato3[0]);
+                    let lista = [...datos1[0], ...datos2[0]];
+                    console.log(lista);
+                    console.log(lista.map((p)=>p.edad).reduce((a,e)=> a+e));
+                 }).fail(function(){
+                    alert("$.get failed!!!!!")
+                 });
+
+            });
+
+            function dibujaTabla(personas) {
+                personas.map(function (persona) {
+                    return `<tr><td>${persona.nombre}</td><td>${persona.apellido}</td><td>${persona.edad}</td></tr>`;
+                }).forEach(function (fila) {
+                    $(fila).appendTo("#mitable");
+                })
+            }
+
+            let cont = 0;      
+
+            function dibujaTablaSuma(personas) {
+               
+                personas.map(function (persona) {
+                    cont += persona.edad;
+                    return `<tr><td>${persona.edad}</td><td>${cont}</td></tr>`;
+                }).forEach(function (fila) {    
+                    $(fila).appendTo("#mitable");
+                })
+            }
+
+            $("#botNormal").click(function () {
+                alert("hola");
+            })
+
+            $("#otro").click(function () {
+                setInterval(function () {
+                    console.log("estoy vivo");
+                }, 1000);
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <table id="mitable" border="1px">
+
+    </table>
+    <input type="button" value="ajax" id="botonajax" />
+    <input type="button" value="aviso" id="botNormal" />
+    <input type="button" value="otro" id="otro" />
+    <input type="button" value="suma" id="suma" />
+</body>
+
+</html>

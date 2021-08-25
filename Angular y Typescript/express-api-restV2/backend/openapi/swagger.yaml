@@ -1,0 +1,204 @@
+swagger: "2.0"
+info:
+  description: "Api Rest de Ejemplo con Libros"
+  version: "1.0.0"
+  title: "API de Libros en MongoDB"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "pepesan@gmail.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost:3000"
+basePath: "/api"
+tags:
+- name: "libros"
+  description: "Manejo de registro y login de usuarios"
+  externalDocs:
+    description: "Find out more"
+    url: "http://swagger.io"
+schemes:
+- "http"
+paths:
+  /libros:
+    get:
+      tags:
+      - "libros"
+      summary: "Obtener listado de libros"
+      description: ""
+      operationId: "getLibros"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/GetLibrosResponse"
+    post:
+      tags:
+      - "libros"
+      summary: "Añade un Libro"
+      description: ""
+      operationId: "addLibro"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Objeto de Libro"
+        required: true
+        schema:
+          $ref: '#/definitions/LibroSinID'
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/GetLibroResponse"
+        405:
+          description: "Invalid input"
+          schema:
+            $ref: "#/definitions/GetLibroResponse"
+  /libros/{id}:
+    get:
+      tags:
+      - "libros"
+      summary: "Coge uin libro por su ID"
+      description: ""
+      operationId: "getLibroById"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID del libro"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/GetLibroResponse"
+        400:
+          description: "ID inválido"
+          schema:
+            $ref: "#/definitions/GetLibroResponse"
+        404:
+          description: "Usuario no encontrado"
+          schema:
+            $ref: "#/definitions/GetLibroResponse"
+    put:
+      tags:
+      - "libros"
+      summary: "Modificar un Libro Existente"
+      description: ""
+      operationId: "updateLibro"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID del libro"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        description: "Objeto de Libro para modificar el usuario con ID"
+        required: true
+        schema:
+          $ref: "#/definitions/Libro"
+      responses:
+        200:
+          description: "Salida correcta"
+          schema:
+            $ref: "#/definitions/GetLibroResponse"
+        404:
+          description: "Libro no encontrado"
+          schema:
+            $ref: "#/definitions/GetLibroResponse"
+        405:
+          description: "Validation exception"
+          schema:
+            $ref: "#/definitions/GetLibroResponse"
+    delete:
+      tags:
+      - "libros"
+      summary: "Borrar un libro"
+      description: "Borrado de un libro por su ID"
+      operationId: "deleteLibro"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID del libro"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Libro Borrado"
+          schema:
+            $ref: "#/definitions/GetLibroResponse"
+        400:
+          description: "ID incorrecto"
+          schema:
+            $ref: "#/definitions/GetLibroResponse"
+        404:
+          description: "Libro no encontrado"
+          schema:
+            $ref: "#/definitions/GetLibroResponse"
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+definitions:
+  Libros:
+    type: "array"
+    items:
+      $ref: '#/definitions/Libro'
+  Libro:
+    type: "object"
+    properties:
+      _id:
+        type: "integer"
+        format: "int64"
+      titulo:
+        type: "string"
+      autor:
+        type: "string"
+      isbn:
+        type: "string"
+    xml:
+      name: "Libro"
+  LibroSinID:
+    type: "object"
+    properties:
+      titulo:
+        type: "string"
+      autor:
+        type: "string"
+      isbn:
+        type: "string"
+    xml:
+      name: "Libro"
+  GetLibroResponse:
+    type: "object"
+    properties:
+      res:
+        type: "string"
+      libro:
+        $ref: "#/definitions/Libro"
+  GetLibrosResponse:
+    type: "object"
+    properties:
+      res:
+        type: "string"
+      libros:
+        $ref: "#/definitions/Libros"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"

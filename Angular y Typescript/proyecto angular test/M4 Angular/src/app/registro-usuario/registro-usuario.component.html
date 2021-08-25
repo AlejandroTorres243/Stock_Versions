@@ -1,0 +1,17 @@
+<p>registro-usuario works!</p>
+
+<form>
+<p>Username: <input type="text" name="nombre" [(ngModel)]="usuario.nombre" /></p>   
+<p>Password: <input type="text" name="clave" [(ngModel)]="usuario.clave" /></p>  
+<p>Email: <input type="text" name="nombre" [(ngModel)]="usuario.email" /></p>   
+<p>Tipo de usuario:
+    <select name="select" [(ngModel)]="usuario.tipo_usuario">
+    <option value="value1" >Admin</option> 
+    <option value="value2" >Redactor</option>
+    <option value="value3" >Editor</option>
+    <option value="value4" >Suscriber</option>
+    <option value="value5" >Visitor</option>
+  </select>
+</p>   
+<p><input type="button" value="aceptar" (click)="registro(usuario)"/></p>  
+</form>

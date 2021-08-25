@@ -1,0 +1,18 @@
+<style>
+
+</style>
+
+<p>lista-usuario works!</p>
+
+<table>
+    <tr *ngFor="let cuenta of lista">
+        <td>{{cuenta.id}}</td>
+        <td>{{cuenta.nombre}}</td>    
+        <td>{{cuenta.clave}}</td>    
+        <td>{{cuenta.email}}</td>    
+        <td>{{cuenta.status}}</td>    
+        <td>{{cuenta.tipo_usuario}}</td>  
+        <td><input type="button" value = "borrar" (click) = "borrar(cuenta)"/></td>
+        <td><input type="button" value = "editar" (click) = "editar(cuenta)"/></td>
+    </tr>
+</table>

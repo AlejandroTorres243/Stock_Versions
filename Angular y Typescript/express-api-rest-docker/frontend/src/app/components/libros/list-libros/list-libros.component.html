@@ -1,0 +1,50 @@
+
+<div class="example-header">
+  <button mat-button (click)="createItem()" ><mat-icon>add</mat-icon>Create Item</button>
+  <mat-form-field>
+    <input matInput (keyup)="applyFilter($event.target.value)"
+           placeholder="Filter">
+  </mat-form-field>
+</div>
+
+<div class="example-container mat-elevation-z8">
+
+  <mat-table [dataSource]="dataSource" matSort>
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="_id">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row._id}} </mat-cell>
+    </ng-container>
+    <!-- Progress Column -->
+    <ng-container matColumnDef="titulo">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Título </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.titulo}} </mat-cell>
+    </ng-container>
+    <!-- Name Column -->
+    <ng-container matColumnDef="autor">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Autor </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.autor}} </mat-cell>
+    </ng-container>
+    <!-- Color Column -->
+    <ng-container matColumnDef="isbn">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> ISBN </mat-header-cell>
+      <mat-cell *matCellDef="let row" > {{row.isbn}} </mat-cell>
+    </ng-container>
+    <!-- Actions Column -->
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Actions </mat-header-cell>
+      <mat-cell *matCellDef="let row">
+        <button mat-button (click)="showItem(row)" ><mat-icon>search</mat-icon></button>
+        <button mat-button (click)="editItem(row)" ><mat-icon>edit</mat-icon></button>
+        <button mat-button (click)="deleteItem(row)" ><mat-icon>delete</mat-icon></button>
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;">
+    </mat-row>
+  </mat-table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+</div>
+

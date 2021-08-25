@@ -1,0 +1,14 @@
+<p>formulario-productos works!</p>
+
+<h1>Insertando Datos</h1>
+<!--Caso en Observables-->
+<!---COMANDO DE VALIDACIONES ngSubmit-->
+<form novalidate (ngSubmit)="miform.form.valid && insertar(productoInsertar)" #miform="ngForm"> 
+    <p>Id<input type="text" [(ngModel)] = "productoInsertar.id" name="id" required #id = "ngModel"/>
+        <span *ngIf="id.errors?.required" class="error">El campo id es obligatorio</span></p> 
+    
+
+    <p>Concepto<input type="text" [(ngModel)] = "productoInsertar.concepto" name="concepto" /></p>
+    <p>Importe<input type="text" [(ngModel)] = "productoInsertar.importe" name="importe" /></p>    
+    <input type="submit" value="enviar"/>
+</form>

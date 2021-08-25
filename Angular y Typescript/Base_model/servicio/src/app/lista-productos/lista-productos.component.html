@@ -1,0 +1,43 @@
+<p>lista-productos works!</p>
+
+    <form>Buscador<input type="text" [(ngModel)]="filtroConcepto" name="concepto"/></form>
+
+<h1>Manejo de bindings, interpolaciones... </h1>
+
+<table>
+
+    <tr *ngFor="let producto of listaFiltrada">
+
+        <ng-container *ngIf="productoEditar!=producto">
+            <td>{{producto.id}}</td>
+            <td>{{producto.concepto}}</td>
+            <td>{{producto.importe}}</td>
+            <td><input type="button" value="borrar" (click) = "borrar(producto)" /></td>
+            <!--COMANDOS PARA MODIFICAR LA INTERFAZ-->
+            <td *ngIf="productoEditar!=producto"><input type="button" value="editar" (click) = "editar(producto)" /></td>
+        </ng-container>
+
+        <ng-container *ngIf="productoEditar==producto">
+            <td><input type="text" name="id" [(ngModel)]="producto.id"/></td>
+            <td><input type="text" name="concepto" [(ngModel)]="producto.concepto"/></td>
+            <td><input type="text" name="importe" [(ngModel)]="producto.importe"/></td>
+            <td><input type="button" value="borrar" (click) = "borrar(producto)" /></td>
+            <!--COMANDOS PARA MODIFICAR LA INTERFAZ-->         
+            <td *ngIf="productoEditar==producto"><input type="button" value="salvar" (click) = "salvar(producto);productoEditar==null" /></td>
+        </ng-container>
+
+        
+    </tr>
+
+</table>
+<h1>Insertando Datos</h1>
+<form>
+    <p>Id<input type="text" [(ngModel)] = "productoInsertar.id" name="id" /></p>
+    <p>Concepto<input type="text" [(ngModel)] = "productoInsertar.concepto" name="concepto" /></p>
+    <p>Importe<input type="text" [(ngModel)] = "productoInsertar.importe" name="importe" /></p>
+    <input type="button" value="enviar" (click)="insertar(productoInsertar); productoInsertar=''" />
+</form>
+<h1>Modificando Datos</h1>
+{{productoEditar?.id}}
+{{productoEditar?.concepto}}
+{{productoEditar?.importe}}

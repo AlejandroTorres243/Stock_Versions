@@ -1,0 +1,10 @@
+<p>editar-producto works!</p>
+
+<h1>Modificar Datos</h1>
+<!--Caso en Observables-->
+<form>
+    <p>Nombre<input type="text" [(ngModel)] = "productoEditar.nombre" name="nombre" />{{productoEditar.nombre}}</p>
+    <p>Descripcion<input type="text" [(ngModel)] = "productoEditar.descripcion" name="descripcion" />{{productoEditar.descripcion}}</p>   
+    <p>Valor<input type="text" [(ngModel)] = "productoEditar.valor" name="valor" />{{productoEditar.valor}}</p>
+    <input type="button" value="salvar" (click)="salvar(productoEditar); productoEditar='' ">
+</form>

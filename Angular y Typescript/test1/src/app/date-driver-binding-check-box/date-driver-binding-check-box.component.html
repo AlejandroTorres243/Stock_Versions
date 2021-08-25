@@ -1,0 +1,13 @@
+<p>date-driver-binding-check-box works!</p>
+<!--DATA DRIVER-->
+<p *ngFor="let posicion of listaPersonas" (mouseenter) = "seleccionado(posicion)"> 
+    {{posicion.nombre}} {{posicion.apellido}} {{posicion.edad}} 
+    <input type="checkbox" name="informatico" [(ngModel)] = "posicion.informatico" />
+    <!--Data driver binding complementario-->
+    <!--cada boton tiene como clave principal el nombre, para que no modifique los demas datos-->
+    <input type="radio" value = "java" [name] = "posicion.nombre" [(ngModel)] = "posicion.lenguaje" />java
+    <input type="radio" value = "cobol" [name] = "posicion.nombre" [(ngModel)] = "posicion.lenguaje" />cobol
+    <input type="radio" value = "c#" [name] = "posicion.nombre" [(ngModel)] = "posicion.lenguaje" />c#
+    <input type="radio" value = "python" [name] = "posicion.nombre" [(ngModel)] = "posicion.lenguaje" />python
+</p>
+<label>Persona: {{selector?.nombre}} {{selector?.apellido}} {{selector?.informatico}} {{selector?.lenguaje}}</label>

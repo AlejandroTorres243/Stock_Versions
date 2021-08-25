@@ -1,0 +1,7 @@
+.idea
+backend/modules
+backend/public/uploads/*
+frontend/dist/nombreproyecto
+frontend/node_modules
+mochawesome-report
+package-lock.json

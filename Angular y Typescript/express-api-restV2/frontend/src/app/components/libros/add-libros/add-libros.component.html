@@ -1,0 +1,60 @@
+<button mat-raised-button  color="primary" (click)="volver()">Volver</button>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Create Item Form</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <!-- put the form here -->
+    <form #formularioAlta="ngForm">
+      <mat-form-field>
+        <mat-label>Título</mat-label>
+        <input  matInput  placeholder="Título"
+                [(ngModel)]="modelo.titulo"  name="titulo"
+                required minlength="2" maxlength="100" #titulo='ngModel' />
+        <div *ngIf="formularioAlta.submitted && formularioAlta.invalid">
+          <div [hidden]="!titulo.errors.required">
+            El Nombre no debe estar vacío
+          </div>
+          <div [hidden]="!titulo.errors.minlength">
+            El Nombre debe tener al menos 4 caracteres
+          </div>
+          <div [hidden]="!titulo.errors.maxlength">
+            El Nombre debe tener menos de 20 caracteres
+          </div>
+        </div>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Autor</mat-label>
+        <input  matInput  placeholder="Autor"
+                [(ngModel)]="modelo.autor"  name="autor"
+                required minlength="2" maxlength="40" #autor='ngModel'>
+        <div *ngIf="formularioAlta.submitted && formularioAlta.invalid">
+          <div [hidden]="!autor.errors.required">
+            El autor no debe estar vacío
+          </div>
+          <div [hidden]="!autor.errors.minlength">
+            El autor debe tener al menos 4 caracteres
+          </div>
+          <div [hidden]="!autor.errors.maxlength">
+            El autor debe tener menos de 20 caracteres
+          </div>
+        </div>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>ISBN</mat-label>
+        <input type="number"  matInput  placeholder="ISBN"
+                [(ngModel)]="modelo.isbn"  name="isbn"
+                required  #isbn='ngModel'>
+        <div *ngIf="formularioAlta.submitted && formularioAlta.invalid">
+          <div [hidden]="!isbn.errors.required">
+            El autor no debe estar vacío
+          </div>
+        </div>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button  mat-raised-button (click)="save()"  color="primary">Guardar Libro</button>
+  </mat-card-actions>
+</mat-card>

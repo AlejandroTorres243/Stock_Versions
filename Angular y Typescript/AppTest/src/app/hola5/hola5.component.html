@@ -1,0 +1,20 @@
+<p *ngFor="let persona of listaPersonas" (click)="selecciona(persona)">
+
+  {{persona.nombre}} {{persona.apellidos}} {{persona.edad}}
+  
+  <input type="checkbox" name="informatico" id="informatico" [(ngModel)]="persona.informatico">
+
+</p>
+<input type="button" (click)="add()" value="Añadir persona">
+
+<p>Seleccionada: 
+    
+    
+    Nombre: {{seleccionada.nombre}}
+    Infromatico: {{seleccionada.informatico}}
+
+
+
+</p>
+
+<input type="button"  (click)="borrar()" value="Borrar seleccionado">

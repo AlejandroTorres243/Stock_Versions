@@ -1,0 +1,24 @@
+        <ng-container *ngIf="productoEditar!=producto">
+        <!--<td>{{producto.id}}</td>
+            <td>{{producto.concepto | uppercase | splice: 0:4}}</td>--> <!--AGREGANDO PIPE (|) --> <!--ENCADENANDO PIPES-->
+            <!--<td>{{producto.importe | number : '1.2-2'}}</td>--><!--AGREGANDO PIPE (|) -->
+            <td>{{producto.id}}</td>
+            <td>{{producto.concepto}}</td>
+            <td>{{producto.importe | iva}}</td> <!---Custom PIPE-->
+            <td><input type="button" value="borrar" (click) = "borrar(producto)" /></td>
+            <td *ngIf="productoEditar!=producto"><input type="button" value="edicion rapida" (click) = "editar(producto)" /></td>
+            <td><input type="button" value="detalle" (click) = "detalle(producto)" /></td>
+            <td><input type="button" value="editar" (click) = "editar2(producto)" /></td>
+
+        </ng-container>
+
+        <ng-container *ngIf="productoEditar==producto">
+
+            <td><input type="text" name="id" [(ngModel)]="producto.id"/></td>
+            <td><input type="text" name="concepto" [(ngModel)]="producto.concepto"/></td>
+            <td><input type="text" name="importe" [(ngModel)]="producto.importe"/></td>
+            <td><input type="button" value="borrar" (click) = "borrar(producto)" /></td>
+            <!--COMANDOS PARA MODIFICAR LA INTERFAZ-->         
+            <td *ngIf="productoEditar==producto"><input type="button" value="salvar" (click) = "salvar(producto);productoEditar==null" /></td>
+
+        </ng-container>

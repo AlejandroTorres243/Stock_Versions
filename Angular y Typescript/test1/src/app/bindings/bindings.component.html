@@ -1,0 +1,20 @@
+<!--Interpolacion-->
+<p>bindings works!</p>
+<!--Property binding-->
+<img [src] = "url" />
+<!--Eventos-->
+<p> {{contador}} </p>
+<input type="button" (click)="incrementa()" value="+"/>
+<input type="button" (click)="decrementa()" value="-"/>
+<!--Bindings de Objetos-->
+<ul>
+    <li>{{sujeto.nombre}}</li>
+    <li>{{sujeto.apellido}}</li>
+    <li>{{sujeto.edad}}</li>
+</ul>
+<!--Directiva Estructural-->
+<p *ngFor="let posicion of listaPersonas"> {{posicion.nombre}} {{posicion.apellido}} {{posicion.edad}}</p>
+<!--Directiva Opcionales-->
+<p *ngIf="boton">{{sujeto.nombre}} {{sujeto.apellido}} {{sujeto.edad}}</p>
+<input type="button" value="mostrar" (click) ="mostrar()"/>
+<input type="button" value="ocultar" (click) ="ocultar()"/>

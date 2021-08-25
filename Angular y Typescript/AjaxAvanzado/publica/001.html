@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            suma = 0;
+
+            function pintarTabla(personas1) {
+                personas1.map(function (persona) {
+                    return `<tr><td>${persona.nombre}</td><td>${persona.apellido}</td><td>${persona.edad}</td></tr>`
+                }).forEach(function (fila) {
+                    $(fila).appendTo("#tabla1");
+                })
+            }
+
+            $("#botonAjax").click(function () {
+                console.log("Has pulsado");
+                let promesa1=$.get("personas").promise();
+                let promesa2=$.get("personas2").promise();
+                let promesa3=$.get("personas3").promise();
+                
+                /*
+                promesa1.then(function(datos1){
+                    pintarTabla(datos1);
+                });
+                promesa2.then(function(datos2){
+                    pintarTabla(datos2);
+                });
+                */
+
+                $.when(promesa2, promesa1, promesa3).then(function(datos1, datos2, datos3){
+                    pintarTabla(datos2[0]);
+                    pintarTabla(datos1[0]);
+
+                    console.log();
+                    
+                    $("body").append(`La suma de todas las edades es de: ${datos3[0].map((p) => p.edad).reduce((a,e) => a + e)}`);
+                    
+
+                }).fail(function(){
+                    alert("error");
+                });
+
+            });
+            $("#botonNormal").click(function () {
+                for (let i = 0; i < 100; i++) {
+
+                    console.log(i);
+
+                }
+            });
+            $("#otro").click(function () {
+                setInterval(function () {
+                    console.log("estoy vivo");
+                }, 0)
+            });
+        });
+
+
+
+    </script>
+</head>
+
+<body>
+    <table id="tabla1" border="1">
+
+    </table>
+    <input type="button" id="botonAjax" value="Ajax" />
+    <input type="button" id="botonNormal" value="boton normal">
+    <input type="button" id="otro" value="Otro">
+    <div id="datos">
+    </div>
+</body>
+
+</html>

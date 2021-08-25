@@ -1,0 +1,36 @@
+<h3>Operacion</h3>
+<form action="#" method="get">
+    <table>
+        <tr><td><label for="numero1">numero1</label></td><td><input type="text" name="numero1" [(ngModel)]="numero1" id="numero1"> </td><br></tr>
+        <tr><td><label for="numero2">numero2</label></td><td><input type="text" name="numero2" [(ngModel)]="numero2" id="numero2"> <br></td></tr>
+        <tr>
+            <td>
+                <label for="operador">operador</label>
+            </td>
+            <td>
+                <select name="operador" [(ngModel)]="operador" id="operador"> <br>
+                    <option value="multiplicar" selected>multiplicar</option>
+                    <option value="dividir">dividir</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" (click)="operar()" value="Operar"> 
+            </td>
+        </tr>
+    </table>
+    
+    
+
+
+</form>
+
+<p>Este es el numero1: {{numero1}} </p>
+<p>Este es el numero2: {{numero2}}</p>
+
+<p>El operador es este {{operador}}</p>
+
+
+<p>Resultado: {{resultado}}</p>
