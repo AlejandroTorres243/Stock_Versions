@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aff41c913d0841ad8479c6a52698d312" Name="Diagram1" >
+        <EntityTypeShape EntityType="Model1.Moneda" Width="1.5" PointX="1.625" PointY="0.75" />
+        <EntityTypeShape EntityType="Model1.Factor" Width="1.5" PointX="3.75" PointY="0.75" />
+        <AssociationConnector Association="Model1.MonedaFactor" />
+        <AssociationConnector Association="Model1.MonedaFactor1" />
+        <EntityTypeShape EntityType="Model1.Historial" Width="1.5" PointX="5.75" PointY="0.625" />
+        <EntityTypeShape EntityType="Model1.StockDinerico" Width="1.5" PointX="7.75" PointY="0.75" />
+        <AssociationConnector Association="Model1.FactorHistorial" />
+        <AssociationConnector Association="Model1.HistorialStockDinerico" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

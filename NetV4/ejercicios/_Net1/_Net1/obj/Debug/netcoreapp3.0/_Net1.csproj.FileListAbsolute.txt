@@ -1,0 +1,11 @@
+C:\Users\AlumnoGTI\source\repos\_Net1\_Net1\bin\Debug\netcoreapp3.0\_Net1.exe
+C:\Users\AlumnoGTI\source\repos\_Net1\_Net1\bin\Debug\netcoreapp3.0\_Net1.deps.json
+C:\Users\AlumnoGTI\source\repos\_Net1\_Net1\bin\Debug\netcoreapp3.0\_Net1.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\_Net1\_Net1\bin\Debug\netcoreapp3.0\_Net1.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\_Net1\_Net1\bin\Debug\netcoreapp3.0\_Net1.dll
+C:\Users\AlumnoGTI\source\repos\_Net1\_Net1\bin\Debug\netcoreapp3.0\_Net1.pdb
+C:\Users\AlumnoGTI\source\repos\_Net1\_Net1\obj\Debug\netcoreapp3.0\_Net1.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\_Net1\_Net1\obj\Debug\netcoreapp3.0\_Net1.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\_Net1\_Net1\obj\Debug\netcoreapp3.0\_Net1.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\_Net1\_Net1\obj\Debug\netcoreapp3.0\_Net1.dll
+C:\Users\AlumnoGTI\source\repos\_Net1\_Net1\obj\Debug\netcoreapp3.0\_Net1.pdb

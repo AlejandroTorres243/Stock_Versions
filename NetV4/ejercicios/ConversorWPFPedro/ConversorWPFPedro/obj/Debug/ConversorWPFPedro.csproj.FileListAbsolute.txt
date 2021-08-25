@@ -1,0 +1,14 @@
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\bin\Debug\ConversorWPFPedro.exe.config
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\bin\Debug\ConversorWPFPedro.exe
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\bin\Debug\ConversorWPFPedro.pdb
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\obj\Debug\ConversorWPFPedro.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\obj\Debug\MainWindow.g.cs
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\obj\Debug\App.g.cs
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\obj\Debug\ConversorWPFPedro_MarkupCompile.cache
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\obj\Debug\ConversorWPFPedro_MarkupCompile.lref
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\obj\Debug\MainWindow.baml
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\obj\Debug\ConversorWPFPedro.g.resources
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\obj\Debug\ConversorWPFPedro.Properties.Resources.resources
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\obj\Debug\ConversorWPFPedro.csproj.GenerateResource.cache
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\obj\Debug\ConversorWPFPedro.exe
+C:\Users\AlumnoGTI\source\repos\ConversorWPFPedro\ConversorWPFPedro\obj\Debug\ConversorWPFPedro.pdb

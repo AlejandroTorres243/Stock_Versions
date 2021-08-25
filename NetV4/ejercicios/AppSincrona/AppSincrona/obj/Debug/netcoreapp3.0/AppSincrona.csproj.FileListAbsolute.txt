@@ -1,0 +1,17 @@
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\bin\Debug\netcoreapp3.0\AppSincrona.exe
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\bin\Debug\netcoreapp3.0\AppSincrona.deps.json
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\bin\Debug\netcoreapp3.0\AppSincrona.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\bin\Debug\netcoreapp3.0\AppSincrona.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\bin\Debug\netcoreapp3.0\AppSincrona.dll
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\bin\Debug\netcoreapp3.0\AppSincrona.pdb
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\obj\Debug\netcoreapp3.0\AppSincrona.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\obj\Debug\netcoreapp3.0\AppSincrona_MarkupCompile.cache
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\obj\Debug\netcoreapp3.0\AppSincrona_MarkupCompile.lref
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\obj\Debug\netcoreapp3.0\AppSincrona.g.resources
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\obj\Debug\netcoreapp3.0\AppSincrona.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\obj\Debug\netcoreapp3.0\AppSincrona.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\obj\Debug\netcoreapp3.0\AppSincrona.dll
+C:\Users\AlumnoGTI\source\repos\AppSincrona\AppSincrona\obj\Debug\netcoreapp3.0\AppSincrona.pdb

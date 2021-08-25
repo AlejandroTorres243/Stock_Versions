@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "linqk_worker/1.0.0": {
+        "runtime": {
+          "linqk_worker.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "linqk_worker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

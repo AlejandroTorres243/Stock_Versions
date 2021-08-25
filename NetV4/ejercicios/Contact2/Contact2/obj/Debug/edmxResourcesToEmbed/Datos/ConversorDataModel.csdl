@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Monedas" EntityType="Model1.Moneda" />
+    <EntitySet Name="Factores" EntityType="Model1.Factor" />
+    <AssociationSet Name="MonedaFactor" Association="Model1.MonedaFactor">
+      <End Role="Moneda" EntitySet="Monedas" />
+      <End Role="Factor" EntitySet="Factores" />
+    </AssociationSet>
+    <AssociationSet Name="MonedaFactor1" Association="Model1.MonedaFactor1">
+      <End Role="Moneda" EntitySet="Monedas" />
+      <End Role="Factor" EntitySet="Factores" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Moneda">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TipoMoneda" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="FactorOrigen" Relationship="Model1.MonedaFactor" FromRole="Moneda" ToRole="Factor" />
+    <NavigationProperty Name="FactorDestino" Relationship="Model1.MonedaFactor1" FromRole="Moneda" ToRole="Factor" />
+  </EntityType>
+  <EntityType Name="Factor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="MonedaOrigen" Relationship="Model1.MonedaFactor" FromRole="Factor" ToRole="Moneda" />
+    <NavigationProperty Name="MonedaDestino" Relationship="Model1.MonedaFactor1" FromRole="Factor" ToRole="Moneda" />
+    <Property Name="FactorConversion" Type="Decimal" Precision="18" Scale="4" />
+  </EntityType>
+  <Association Name="MonedaFactor">
+    <End Type="Model1.Moneda" Role="Moneda" Multiplicity="1" />
+    <End Type="Model1.Factor" Role="Factor" Multiplicity="*" />
+  </Association>
+  <Association Name="MonedaFactor1">
+    <End Type="Model1.Moneda" Role="Moneda" Multiplicity="1" />
+    <End Type="Model1.Factor" Role="Factor" Multiplicity="*" />
+  </Association>
+</Schema>

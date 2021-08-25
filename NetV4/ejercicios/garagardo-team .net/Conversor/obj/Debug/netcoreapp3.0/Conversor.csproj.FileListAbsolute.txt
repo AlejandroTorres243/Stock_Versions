@@ -1,0 +1,11 @@
+C:\Users\AlumnoGTI\Source\Repos\garagardo-team\Conversor\bin\Debug\netcoreapp3.0\Conversor.exe
+C:\Users\AlumnoGTI\Source\Repos\garagardo-team\Conversor\bin\Debug\netcoreapp3.0\Conversor.deps.json
+C:\Users\AlumnoGTI\Source\Repos\garagardo-team\Conversor\bin\Debug\netcoreapp3.0\Conversor.runtimeconfig.json
+C:\Users\AlumnoGTI\Source\Repos\garagardo-team\Conversor\bin\Debug\netcoreapp3.0\Conversor.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\Source\Repos\garagardo-team\Conversor\bin\Debug\netcoreapp3.0\Conversor.dll
+C:\Users\AlumnoGTI\Source\Repos\garagardo-team\Conversor\bin\Debug\netcoreapp3.0\Conversor.pdb
+C:\Users\AlumnoGTI\Source\Repos\garagardo-team\Conversor\obj\Debug\netcoreapp3.0\Conversor.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\Source\Repos\garagardo-team\Conversor\obj\Debug\netcoreapp3.0\Conversor.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\Source\Repos\garagardo-team\Conversor\obj\Debug\netcoreapp3.0\Conversor.AssemblyInfo.cs
+C:\Users\AlumnoGTI\Source\Repos\garagardo-team\Conversor\obj\Debug\netcoreapp3.0\Conversor.dll
+C:\Users\AlumnoGTI\Source\Repos\garagardo-team\Conversor\obj\Debug\netcoreapp3.0\Conversor.pdb
