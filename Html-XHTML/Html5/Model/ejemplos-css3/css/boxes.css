@@ -1,0 +1,113 @@
+header{
+    width: 100%;
+    overflow: hidden;
+}
+h2{
+    width: 49%;
+    float: left;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 10px;
+    border:10px solid red;
+    margin-right:2%;
+}
+.div3 {
+    box-sizing: border-box;
+    width: 49%;
+    float: left;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid blue;
+}
+.content{
+    width: 100%;
+    overflow: hidden;
+}
+.div4 {
+    width: 24%;
+    float: left;
+    box-sizing: border-box;
+    height: 100px;    
+    padding: 10px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin-right: 2%;
+}
+.div5 {
+    width: 24%;
+    float: left;
+    box-sizing: border-box;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid red;
+    box-sizing: padding-box;
+    margin-right: 2%;
+}
+
+.div6{
+    width: 48%;
+    float: left;
+    box-sizing: border-box;
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.div7{
+    width: 100px;
+    height: 100px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.div8{
+    width: 150px;
+    height: 350px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+.div9 {
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: scroll;
+}
+.centrado_horizontal{
+    text-align: center;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.mimenu{
+    margin: auto;
+    width: 47%;
+    padding: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-left: 10px;
+    list-style-type: none;
+}
+.mimenu li{
+    margin-right: 5px;
+    float: left;
+    text-align: center;
+}
+
+
+.total{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.cincuenta{
+    box-sizing: border-box;
+    background: red;
+    height: 100px;
+    width: 48%;
+    float: left;
+    text-align: center;
+    border:10px black solid;
+    margin: 1%;
+}

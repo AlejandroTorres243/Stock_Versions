@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CursoRepository.java&apos; to &apos;persistencia/src/com.gestamp.formacion.hybrid.persistence&apos;&#x0D;&#x0A;- Original project: &apos;persistencia&apos;&#x0D;&#x0A;- Destination element: &apos;persistencia/src/com.gestamp.formacion.hybrid.persistence&apos;&#x0D;&#x0A;- Original element: &apos;com.gestamp.formacion.hybrid.persistence.CursoRepository.java&apos;" description="Copy compilation unit" destination="/src&lt;com.gestamp.formacion.hybrid.persistence" element1="/src&lt;com.gestamp.formacion.hybrid.persistence{CursoRepository.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1574442046462" units="1" version="1.0"/>
+</session>

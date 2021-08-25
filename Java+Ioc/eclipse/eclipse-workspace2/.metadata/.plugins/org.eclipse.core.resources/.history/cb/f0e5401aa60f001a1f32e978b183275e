@@ -1,0 +1,40 @@
+package com.gestamp.formacion.hybrid.persistence;
+
+import java.util.ArrayList;
+
+import com.gestamp.formacion.hybrid.Dominio.Curso;
+
+public class CursoRepository {
+
+	// variables
+	static ArrayList<Curso> lista = new ArrayList<Curso>();
+	static {
+		lista.add(new Curso("Java",20));
+		lista.add(new Curso("net", 30));
+		lista.add(new Curso("Paco", 40));
+	}
+	
+	// Metodos del repositorio
+	
+	public static ArrayList<Curso> BuscarTodos(){
+		
+		return lista;
+	}
+	
+	public static void insertarCurso(Curso cursonuevo) {
+		
+		lista.add(cursonuevo);
+		
+	}
+	
+	public static void borrar(Curso c) {
+		lista.remove(c);
+	}
+	
+	public Curso BuscarUno(String titulo) {
+		
+		return lista.stream().filter((c) -> c.getTitulo().equals(titulo)).findFirst().get();
+		
+	}
+	
+}

@@ -1,0 +1,51 @@
+package com.gestamp.formacion.hybrid.persistence;
+
+import java.util.ArrayList;
+
+import com.gestamp.formacion.hybrid.Dominio.Curso;
+
+public class CursoRepositoryBD implements IRepositoryCursoMEmory {
+
+	// variables
+	static ArrayList<Curso> lista = new ArrayList<Curso>();
+	static {
+		lista.add(new Curso("Java",20));
+		lista.add(new Curso("net", 30));
+		lista.add(new Curso("Paco", 40));
+	}
+	
+	// Metodos del repositorio
+	
+	@Override
+	public ArrayList<Curso> BuscarTodos(){
+		
+		return lista;
+	}
+	
+	@Override
+	public void insertarCurso(Curso cursonuevo) {
+		
+		lista.add(cursonuevo);
+		
+	}
+	
+	@Override
+	public void borrar(Curso c) {
+		lista.remove(c);
+	}
+	
+	@Override
+	public  Curso BuscarPorTitulo(String titulo) {
+		
+		return lista.stream().filter((c) -> c.getTitulo().equals(titulo)).findFirst().get();
+		
+	}
+	
+	@Override
+	public void EditarCurso(Curso c) {
+		
+		lista.remove(c);
+		lista.add(c);
+	}
+	
+}

@@ -1,0 +1,14 @@
+Coge el resultado de la maquetación que has realizado en el ejercicio 2 de HTML5 y aplícale las siguientes técnicas:
+
+box-sizing
+border-radius
+box-shadow
+flexcss o gridcss
+media queries
+@font-face  y font-family
+Nota: la página debe tener al menos los siguientes elementos:
+
+cabecera con menu y un logo
+contenido principal que sea el formulario
+contenido accesorio al "mismo nivel", de columnas
+un footer con un sitemap (listado de enlaces esenciales para esa web) y los datos de contacto

@@ -1,0 +1,2 @@
+Crear la siguiente página llamada indice.html que sirva como página principal del sitio:
+Crear la página de índice del portfolio:

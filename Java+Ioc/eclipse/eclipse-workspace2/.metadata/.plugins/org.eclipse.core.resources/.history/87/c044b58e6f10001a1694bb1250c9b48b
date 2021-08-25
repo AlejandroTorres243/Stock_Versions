@@ -1,0 +1,7 @@
+package memory2;
+
+import memory.CursoRepository;
+
+public class CursoRepositoryMemory2 extends CursoRepository {
+
+}

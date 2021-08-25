@@ -1,0 +1,72 @@
+package com.gestamp.formacion.hybrid.Dominio;
+
+public class Curso {
+
+	
+	private String titulo;
+	private int duracion;
+	private Categoria categoria;
+	
+	// Constructor
+	
+	public Curso(String titulo, int duracion) {
+		super();
+		this.titulo = titulo;
+		this.duracion = duracion;
+	}
+	
+	// Getters y setters
+	
+	public String getTitulo() {
+		return titulo;
+	}
+	
+
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	
+	public int getDuracion() {
+		return duracion;
+	}
+	
+	public void setDuracion(int duracion) {
+		this.duracion = duracion;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((titulo == null) ? 0 : titulo.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Curso other = (Curso) obj;
+		if (titulo == null) {
+			if (other.titulo != null)
+				return false;
+		} else if (!titulo.equals(other.titulo))
+			return false;
+		return true;
+	}
+	
+	
+}

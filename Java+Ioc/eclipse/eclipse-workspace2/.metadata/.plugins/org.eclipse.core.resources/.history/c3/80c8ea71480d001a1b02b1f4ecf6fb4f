@@ -1,0 +1,38 @@
+package com.gestamp.formacion.hybrid.web;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.gestamp.formacion.hybrid.Dominio.Curso;
+import com.gestamp.formacion.hybrid.persistence.CursoRepository;
+
+/**
+ * Servlet implementation class ServletListaCursos
+ */
+@WebServlet("/ServletListaCursos")
+public class ServletListaCursos extends HttpServlet {
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		PrintWriter pw = response.getWriter();
+		ArrayList<Curso> lista = CursoRepository.BuscarTodos();
+		
+		for(Curso cursos : lista) {
+			
+			pw.print("<p>" + cursos.getTitulo() + "</p>");
+			
+		}
+		
+	}
+
+
+}

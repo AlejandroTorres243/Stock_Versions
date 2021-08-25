@@ -1,0 +1,19 @@
+package utils;
+
+import com.gestamp.formacion.hybrid.persistence.CursoRepository;
+
+import memory.CursoRepositoryMemory;
+import memory2.CursoRepositoryMemory2;
+
+public class FactoriaCursoRepository {
+	
+	public static CursoRepository getRepositorio(TipoRepositorio tipo) {
+		
+		if(tipo == TipoRepositorio.Memory)
+			return new CursoRepositoryMemory();
+		else
+			return new CursoRepositoryMemory2();
+		
+	}
+	
+}

@@ -1,0 +1,23 @@
+package memory2;
+
+import java.util.ArrayList;
+
+import memory.CursoRepository;
+
+public class CursoRepositoryMemory2 extends CursoRepository {
+
+	
+	static ArrayList<Curso> lista = new ArrayList<Curso>();
+	static {
+		lista.add(new Curso("Java",20));
+		lista.add(new Curso("net", 30));
+		lista.add(new Curso("Paco", 40));
+	}
+	
+	// Metodos del repositorio
+	
+	public static ArrayList<Curso> BuscarTodos(){
+		
+		return lista;
+	}
+}

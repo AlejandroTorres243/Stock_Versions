@@ -1,0 +1,11 @@
+Ejercicio 13.2.1
+
+Crea una tabla que haga uso de las siguientes etiquetas: table, caption, thead, tbody, tfoot, th, tr, td. 
+
+La tabla representará la actual representación en tu ayuntamiento, indicando en la cabecera: nombre del partido y el número de concejales; en el cuerpo tendremos una fila por cada partido con: el logotipo del partido y el número de concejales de dicho partido; en el pie pondrá: en la primera columna: Totales y en la segunda el número total de concejales.
+
+Ejercicio 13.2.2
+
+Crea una tabla que haga uso de las siguientes etiquetas: table, caption, thead, tbody, tfoot, th, tr, td. 
+
+La tabla representará la población de cada provincia de tu comunidad autónoma, indicando en la cabecera: nombre de la provincia, la extensión geográfica y el número de habitantes; en el cuerpo tendremos una fila por cada provincia con: el nombre de la provincia y el número de habitantes de dicha provincia; en el pie pondrá: en la primera columna: Totales, en la segunda el total de extensión de la comunidad y en la tercera el número total de habitantes.

@@ -1,0 +1,43 @@
+package com.gestamp.formacion.hybrid.Services;
+
+import java.util.ArrayList;
+
+import com.gestamp.formacion.hybrid.Dominio.Curso;
+import com.gestamp.formacion.hybrid.persistence.CursoRepositoryExterno;
+import com.gestamp.formacion.hybrid.persistence.CursoRepository;
+
+public class CursosServices {
+	
+	CursoRepository repo1 = new CursoRepository();
+
+	public ArrayList<Curso> buscarTodos(){
+		
+		ArrayList<Curso> lista = repo1.BuscarTodos();
+		
+		//lista.addAll(lista2);
+		
+		return lista;
+		
+	}
+	
+	public void insertar(Curso c) {
+		
+		repo1.insertarCurso(c);
+		
+	}
+	
+	public  void remove(Curso c) {
+		repo1.borrar(c);
+	}
+	
+	
+	public  Curso FindByTitle(String titulo) {
+		
+		return repo1.BuscarPorTitulo(titulo);
+	}
+	
+	
+	public static void EditCourse(Curso c) {
+		CursoRepository.EditarCurso(c);
+	}
+}

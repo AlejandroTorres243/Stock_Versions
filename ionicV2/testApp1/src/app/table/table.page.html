@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Datatable
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title>Ejemplo básico</ion-title>
+    <ngx-datatable
+            [rows]="rows"
+            [columns]="columns"
+
+    >
+    </ngx-datatable>
+  <ion-title>Limit 2 Paginado</ion-title>
+  <ngx-datatable
+          [rows]="rows"
+          [columns]="columns"
+          limit="2"
+          [columnMode]="'force'"
+          [headerHeight]="50"
+          [footerHeight]="50"
+          [rowHeight]="'auto'"
+  >
+  </ngx-datatable>
+  <ion-title>Filtrado</ion-title>
+  <input #search
+          type="text"
+          style="padding:8px;margin:15px auto;width:30%;"
+          placeholder="Type to filter the name column..."
+          (keyup)="updateFilter(search.value)"
+  />
+  <ngx-datatable
+          #table
+          class="material"
+          [columns]="columns"
+          [columnMode]="'force'"
+          [headerHeight]="50"
+          [footerHeight]="50"
+          [rowHeight]="'auto'"
+          [limit]="2"
+          [rows]="rows2"
+  >
+  </ngx-datatable>
+  <ion-title>Listado Rest</ion-title>
+  <input #search2
+         type="text"
+         style="padding:8px;margin:15px auto;width:30%;"
+         placeholder="Type to filter the name column..."
+         (keyup)="updateFilter2(search2.value)"
+  />
+  <ngx-datatable
+          #table2
+          class="material"
+          [loadingIndicator]="loading"
+          [columns]="columnasListado"
+          [columnMode]="'force'"
+          [headerHeight]="50"
+          [footerHeight]="50"
+          [rowHeight]="'auto'"
+          [limit]="2"
+          [rows]="listado"
+  >
+  </ngx-datatable>
+  <ion-title>Listado Rest con Botones</ion-title>
+  <input #search2
+         type="text"
+         style="padding:8px;margin:15px auto;width:30%;"
+         placeholder="Type to filter the name column..."
+         (keyup)="updateFilter2(search2.value)"
+  />
+  <ngx-datatable
+          #table3
+          class="material"
+          [loadingIndicator]="loading"
+          [columns]="columnasListado2"
+          [columnMode]="'force'"
+          [headerHeight]="50"
+          [footerHeight]="50"
+          [rowHeight]="'auto'"
+          [limit]="2"
+          [rows]="listado"
+  >
+    <ngx-datatable-column name="Acciones" [resizeable]="false" sortable="false">
+      <ng-template #addButton let-row="row" let-button="column.button">
+        <ion-button (click)="muestraPartido(row)">Show</ion-button>
+      </ng-template>
+    </ngx-datatable-column>
+  </ngx-datatable>
+</ion-content>

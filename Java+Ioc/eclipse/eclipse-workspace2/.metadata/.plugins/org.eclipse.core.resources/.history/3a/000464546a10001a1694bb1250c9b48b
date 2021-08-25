@@ -1,0 +1,5 @@
+package com.gestamp.formacion.hybrid.persistence;
+
+public class CursoRepositoryMemory extends CursoRepository {
+
+}

@@ -1,0 +1,5 @@
+ackage memory;
+
+public class CursoRepositoryMemory extends CursoRepository {
+
+}

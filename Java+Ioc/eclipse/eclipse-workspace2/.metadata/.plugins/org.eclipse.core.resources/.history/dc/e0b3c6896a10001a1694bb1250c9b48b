@@ -1,0 +1,22 @@
+package com.gestamp.formacion.hybrid.console;
+
+import java.util.ArrayList;
+
+import com.gestamp.formacion.hybrid.Dominio.Curso;
+import com.gestamp.formacion.hybrid.persistence.CursoRepository;
+
+public class principal {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Curso> lista = CursoRepository.BuscarTodos();
+		
+		
+		for (Curso curso : lista) {
+			System.out.println(curso.getTitulo());
+			
+		}
+		
+	}
+
+}

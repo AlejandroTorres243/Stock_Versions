@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.gestamp.formacion.hybrid.Services.CursosServices"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="com.gestamp.formacion.hybrid.persistence.CursoRepository"/>
+<fullyQualifiedTypeName name="com.gestamp.formacion.hybrid.persistence.ICursoRepository"/>
+<fullyQualifiedTypeName name="com.gestamp.formacion.hybrid.persistence.FactoriaCursoRepository"/>
+<fullyQualifiedTypeName name="com.gestamp.formacion.hybrid.persistence.TipoRepositorio"/>
+<fullyQualifiedTypeName name="com.gestamp.formacion.hybrid.Dominio.Curso"/>
+</qualifiedTypeNameHistroy>

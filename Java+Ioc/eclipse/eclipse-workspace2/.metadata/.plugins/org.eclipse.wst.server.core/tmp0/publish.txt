@@ -1,0 +1,8 @@
+#Tomcat publish data
+#Tue Nov 26 18:17:10 CET 2019
+org.eclipse.jst.j2ee.server\:persistenciaCore=WEB-INF/lib/persistenciaCore.jar
+org.eclipse.jst.j2ee.server\:PersistenciaMemory2=WEB-INF/lib/PersistenciaMemory2.jar
+org.eclipse.jst.j2ee.server\:PersistenciaUtils=WEB-INF/lib/PersistenciaUtils.jar
+org.eclipse.jst.j2ee.server\:persistenciaMemory=WEB-INF/lib/persistenciaMemory.jar
+org.eclipse.jst.j2ee.server\:Dominio=WEB-INF/lib/Dominio.jar
+org.eclipse.jst.j2ee.server\:Servicios=WEB-INF/lib/Servicios.jar

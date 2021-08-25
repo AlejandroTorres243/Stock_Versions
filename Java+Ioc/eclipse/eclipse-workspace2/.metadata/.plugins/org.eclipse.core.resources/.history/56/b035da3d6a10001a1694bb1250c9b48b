@@ -1,0 +1,14 @@
+package com.gestamp.formacion.hybrid.persistence;
+
+public class FactoriaCursoRepository {
+	
+	public static CursoRepository getRepositorio(TipoRepositorio tipo) {
+		
+		if(tipo == TipoRepositorio.Memory)
+			return new CursoRepositoryMemory();
+		else
+			return new CursoRepositoryMemory2();
+		
+	}
+	
+}

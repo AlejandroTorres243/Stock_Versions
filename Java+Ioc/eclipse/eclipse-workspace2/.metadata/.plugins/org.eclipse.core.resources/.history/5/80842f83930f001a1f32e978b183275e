@@ -1,0 +1,67 @@
+package com.gestamp.formacion.hybrid.web;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.gestamp.formacion.hybrid.Dominio.Curso;
+import com.gestamp.formacion.hybrid.Services.CursosServices;
+
+/**
+ * Servlet implementation class Controlador
+ */
+@WebServlet("/Controlador")
+public class Controlador extends HttpServlet {
+       
+	
+	/*
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
+	
+	
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String accion = request.getParameter("accion");
+		
+		if (accion==null) {
+			RequestDispatcher despachador = request.getRequestDispatcher("Listado.jsp");
+			request.setAttribute("Listado", CursosServices.buscarTodos());
+			despachador.forward(request, response);
+		} else {
+			RequestDispatcher despachador = request.getRequestDispatcher("formularioInserccion.jsp");
+			despachador.forward(request, response);
+		}
+		
+		if (accion.contentEquals("inserccion")) {
+			
+			RequestDispatcher despachador = request.getRequestDispatcher("Listado.jsp");
+			despachador.forward(request, response);
+			
+		} else {
+			
+			String titulo = request.getParameter("titulo");
+			int duracion = Integer.parseInt(request.getParameter("duracion"));
+			Curso c = new Curso (titulo, duracion);
+			
+			CursosServices.insertar(c);
+			
+			RequestDispatcher despachador = request.getRequestDispatcher("formularioInserccion.jsp");
+			despachador.forward(request, response);
+		}
+
+		
+	}
+
+
+}

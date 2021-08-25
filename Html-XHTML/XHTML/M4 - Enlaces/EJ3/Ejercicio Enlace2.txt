@@ -1,0 +1,52 @@
+1.-Crea una estructura con:
+
+un fichero index.html
+un fichero favicon.png
+una carpeta imagenes
+una imagen producto1.png
+una imagen producto2.png
+una carpeta productos
+un fichero listado_productos.html
+un fichero producto1.html
+un fichero producto2.html
+un fichero contacto.html
+un fichero oficinas.html
+El fichero index.html tiene que tener:
+
+Un título de página principal de la empresa (title) "Mi Empresa"
+Un menú de acceso a contenidos
+Un enlace a la página principal
+Un enlace a la página del listado de productos
+Un enlace a la página de contacto
+Un enlace a la página de oficinas
+Un título grande de bienvenida
+Un texto de bienvenida
+La página del listado de productos tiene:
+
+Un título de página principal de la empresa (title)
+Un enlace para volver a la página principal
+Un título grande para indicar que estamos en el listado de productos
+Un título más pequeño para indicar el nombre del producto 1
+Un texto de descripción pequeño del producto 1
+Un enlace a la página de producto 1
+Un título más pequeño para indicar el nombre del producto 2
+Un texto de descripción pequeño del producto 2
+Un enlace a la página de producto 2
+Cada página de producto debe tener:
+
+Un título de página principal de la empresa (title)
+Un enlace para volver a la página de listado de productos
+Un Título grande con el nombre del producto
+Un enlace a la imagen del producto
+Un texto largo de descripción del producto
+La página de contacto debe tener:
+
+Un título de página principal de la empresa (title)
+Un enlace para volver a la página principal
+Un número de teléfono y una dirección
+La página de oficinas debe tener:
+
+Un título de página principal de la empresa (title)
+Un enlace para volver a la página principal
+Un título con el nombre de la tienda
+Un texto con la dirección de la tienda

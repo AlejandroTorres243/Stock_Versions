@@ -1,0 +1,18 @@
+package utils;
+
+import memory.CursoRepositorioMemory;
+import memory.CursoRepositorioMemory;
+import memory2.CursoRepositoryMemory2;
+
+public class FactoriaCursoRepository {
+	
+	public static CursoRepositorioMemory getRepositorio(TipoRepositorio tipo) {
+		
+		if(tipo == TipoRepositorio.Memory)
+			return new CursoRepositoryMemory();
+		else
+			return new CursoRepositoryMemory2();
+		
+	}
+	
+}

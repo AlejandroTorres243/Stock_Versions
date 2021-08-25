@@ -1,0 +1,17 @@
+Analiza los siguientes sitios web e identifica visualmente la estructura y el layout (cabecera, contenedor, contenido, pie y menús):
+
+http://cursosdedesarrollo.com/
+
+http://cursosdedesarrollo.com/aula
+
+http://www.ivoox.com/
+
+http://www.vitoria-gasteiz.org/empleo
+
+http://www.vitoria-gasteiz.org/
+
+http://www.vitoria-gasteiz.org/cetic
+
+Deberás entregar un informe con capturas de los sitios web con recuadros y nombres de cada recuadro. 
+
+Utiliza el LibreOffice para redactar el informe y la captura de pantalla para obtener capturas de las páginas de los sitios web para incluirlas en el informe. 

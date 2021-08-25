@@ -1,0 +1,19 @@
+package com.gestamp.formacion.hybrid.persistence;
+
+import java.util.ArrayList;
+
+import com.gestamp.formacion.hybrid.Dominio.Curso;
+
+public interface ICursoRepository {
+
+	ArrayList<Curso> BuscarTodos();
+
+	void insertarCurso(Curso cursonuevo);
+
+	void borrar(Curso c);
+
+	Curso buscarUno(String titulo);
+
+	void salvar(Curso c);
+
+}

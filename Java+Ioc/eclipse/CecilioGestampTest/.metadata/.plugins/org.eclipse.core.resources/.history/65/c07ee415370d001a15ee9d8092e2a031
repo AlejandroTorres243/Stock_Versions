@@ -1,0 +1,27 @@
+package com.gestamp.formacion.hybrid.domain;
+
+public class Curso {
+
+	private String titulo;
+	private int duracion;
+	
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	public int getDuracion() {
+		return duracion;
+	}
+	public void setDuracion(int duracion) {
+		this.duracion = duracion;
+	}
+	
+	public Curso(String titulo, int duracion) {
+		super();
+		this.titulo = titulo;
+		this.duracion = duracion;
+	}
+	
+}

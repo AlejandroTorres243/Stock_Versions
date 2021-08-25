@@ -1,0 +1,8 @@
+package com.gestamp.formacion.hybrid.domain;
+
+public class Curso {
+
+	private String titulo;
+	private int duracion;
+	
+}

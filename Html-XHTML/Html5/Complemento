@@ -1,0 +1,86 @@
+<div id="EmailCampo">
+  <label for="emailcampo">EmailCampo:</label>
+  <input type="email" name="emailcampo" value=""/>
+</div>
+<div id="UrlCampo">
+  <label for="urlcampo">UrlCampo:</label>
+  <input type="url" name="urlcampo" value=""/>
+</div>
+<div id="DateCampo">
+  <label for="datecampo">DateCampo:</label>
+  <input type="date" name="datecampo" value=""/>
+</div>
+<div id="TimeCampo">
+  <label for="timecampo">TimeCampo:</label>
+  <input type="time" name="timecampo" value=""/>
+</div>
+<div id="DatetimeCampo">
+  <label for="datetimecampo">DatetimeCampo</label>
+  <input type="datetime" name="datetimecampo" value=""/>
+</div>
+<div id="MonthCampo">
+  <label for="monthcampo">MonthCampo</label>
+  <input type="month" name="monthcampo" value=""/>
+</div>
+<div id="WeekCampo">
+  <label for="weekcampo">WeekCampo:</label>
+  <input type="week" name="weekcampo" value=""/>
+</div>
+<div id="NumberCampo">
+  <label for="numbercampo">NumberCampo:</label>
+  <input type="number" name="numbercampo" value=""/>
+</div>
+<div id="RangeCampo">
+  <label for="rangecampo">RangeCampo:</label>
+  <input type="range" name="rangecampo" value=""/>
+</div>
+<div id="Telcampo">
+  <label for="telcampo">Telcampo:</label>
+  <input type="tel" name="telcampo" value=""/>
+</div>
+<div id="SearchCampo">
+  <label for="searchcampo">SearchCampo:</label>
+  <input type="search" name="searchcampo" value=""/>
+</div>
+<div id="ColorCampo">
+  <label for="colorcampo">ColorCampo:</label>
+  <input type="color" name="colorcampo" value=""/>
+</div>
+<div id="Lista">
+  <label for="inputspaindalist">InputSpainDatalist:</label>
+  <input id="España" type="text" name="inputspaindalist" list="provincia">
+  <datalist id="provincia">
+      <option label="Bizkaia" value="Bizkaia">
+      <option label="Cataluña" value="Cataluña">
+      <option label="Madrid" value="Madrid">
+  </datalist>
+</div>
+<div id="Condiciones">
+  <label for="autofocus">Autofocus:</label>
+  <input type="text" name="autofocus" value="" autofocus/>
+  <label for="placeholder">Placeholder:</label>
+  <input type="text" name="placeholder" value="" placeholder="placeholder"/>
+  <label for="required">Required:</label>
+  <input type="text" name="required" value="" required/>
+  <label for="autocomplete">Autocomplete:</label>
+  <input type="text" name="autocomplete" value="" autocomplete="on"/>
+</div>
+<div id="NumberCampo2">
+  <label for="numberCampo2">NumberCampo2:</label>
+  <input type="number" name="numberCampo2" value="" min = 0 max=10/>
+</div>
+<div id="Arch">
+  <label for="name">fichero</label>
+  <input type="file" name="fichero[]" id="name" multiple="multiple" value=""/>
+</div>
+<div id="Pass">
+  <label for="password">Password</label>
+  <input type="password" name="contra" value="" required
+  placeholder="Password" autofocus
+  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+  />
+</div>
+<div id="progress">
+  <progress value="5" max="20">5</progress>
+</div>
+<button type="button" name="summit">summit</button>

@@ -1,0 +1,24 @@
+<%@page import="com.gestamp.formacion.hybrid.Dominio.Curso"%>
+<%@page import="com.gestamp.formacion.hybrid.Services.CursosServices"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <%
+ 
+ 
+ 	String titulo = request.getParameter("titulo");
+ 	int duracion = Integer.parseInt(request.getParameter("duracion"));
+ 	
+ 	CursosServices.insertar(new Curso("python",20));
+ 	response.sendRedirect("listado.jsp");
+ 
+ 
+ %>
+</body>
+</html>

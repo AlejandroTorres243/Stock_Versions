@@ -1,0 +1,1 @@
+Con la base del ejercicio 18, coloca las bases para la colocación de un fichero CSS de estilos y un fichero JS en las páginas web

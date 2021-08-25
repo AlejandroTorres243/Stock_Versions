@@ -1,0 +1,1 @@
+Con la base del Ejercicio 10, cambia la estructura y el Layout de las páginas web, para incluir Cabecera, Menu, Contenido y Pie.
