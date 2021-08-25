@@ -1,0 +1,11 @@
+C:\Users\AlumnoGTI\source\repos\PruebaManu\PruebaManu\bin\Debug\netcoreapp3.0\PruebaManu.exe
+C:\Users\AlumnoGTI\source\repos\PruebaManu\PruebaManu\bin\Debug\netcoreapp3.0\PruebaManu.deps.json
+C:\Users\AlumnoGTI\source\repos\PruebaManu\PruebaManu\bin\Debug\netcoreapp3.0\PruebaManu.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\PruebaManu\PruebaManu\bin\Debug\netcoreapp3.0\PruebaManu.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\PruebaManu\PruebaManu\bin\Debug\netcoreapp3.0\PruebaManu.dll
+C:\Users\AlumnoGTI\source\repos\PruebaManu\PruebaManu\bin\Debug\netcoreapp3.0\PruebaManu.pdb
+C:\Users\AlumnoGTI\source\repos\PruebaManu\PruebaManu\obj\Debug\netcoreapp3.0\PruebaManu.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\PruebaManu\PruebaManu\obj\Debug\netcoreapp3.0\PruebaManu.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\PruebaManu\PruebaManu\obj\Debug\netcoreapp3.0\PruebaManu.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\PruebaManu\PruebaManu\obj\Debug\netcoreapp3.0\PruebaManu.dll
+C:\Users\AlumnoGTI\source\repos\PruebaManu\PruebaManu\obj\Debug\netcoreapp3.0\PruebaManu.pdb

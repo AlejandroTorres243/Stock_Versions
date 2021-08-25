@@ -1,0 +1,11 @@
+C:\Users\AlumnoGTI\source\repos\_Net2\_Net2\bin\Debug\netcoreapp3.0\_Net2.exe
+C:\Users\AlumnoGTI\source\repos\_Net2\_Net2\bin\Debug\netcoreapp3.0\_Net2.deps.json
+C:\Users\AlumnoGTI\source\repos\_Net2\_Net2\bin\Debug\netcoreapp3.0\_Net2.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\_Net2\_Net2\bin\Debug\netcoreapp3.0\_Net2.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\_Net2\_Net2\bin\Debug\netcoreapp3.0\_Net2.dll
+C:\Users\AlumnoGTI\source\repos\_Net2\_Net2\bin\Debug\netcoreapp3.0\_Net2.pdb
+C:\Users\AlumnoGTI\source\repos\_Net2\_Net2\obj\Debug\netcoreapp3.0\_Net2.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\_Net2\_Net2\obj\Debug\netcoreapp3.0\_Net2.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\_Net2\_Net2\obj\Debug\netcoreapp3.0\_Net2.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\_Net2\_Net2\obj\Debug\netcoreapp3.0\_Net2.dll
+C:\Users\AlumnoGTI\source\repos\_Net2\_Net2\obj\Debug\netcoreapp3.0\_Net2.pdb

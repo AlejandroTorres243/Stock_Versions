@@ -1,0 +1,11 @@
+C:\Users\AlumnoGTI\source\repos\CargadeDatos\CargadeDatos\bin\Debug\netcoreapp3.0\CargadeDatos.exe
+C:\Users\AlumnoGTI\source\repos\CargadeDatos\CargadeDatos\bin\Debug\netcoreapp3.0\CargadeDatos.deps.json
+C:\Users\AlumnoGTI\source\repos\CargadeDatos\CargadeDatos\bin\Debug\netcoreapp3.0\CargadeDatos.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\CargadeDatos\CargadeDatos\bin\Debug\netcoreapp3.0\CargadeDatos.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\CargadeDatos\CargadeDatos\bin\Debug\netcoreapp3.0\CargadeDatos.dll
+C:\Users\AlumnoGTI\source\repos\CargadeDatos\CargadeDatos\bin\Debug\netcoreapp3.0\CargadeDatos.pdb
+C:\Users\AlumnoGTI\source\repos\CargadeDatos\CargadeDatos\obj\Debug\netcoreapp3.0\CargadeDatos.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\CargadeDatos\CargadeDatos\obj\Debug\netcoreapp3.0\CargadeDatos.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\CargadeDatos\CargadeDatos\obj\Debug\netcoreapp3.0\CargadeDatos.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\CargadeDatos\CargadeDatos\obj\Debug\netcoreapp3.0\CargadeDatos.dll
+C:\Users\AlumnoGTI\source\repos\CargadeDatos\CargadeDatos\obj\Debug\netcoreapp3.0\CargadeDatos.pdb

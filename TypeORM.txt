@@ -1,0 +1,101 @@
+TypeORM
+
+Para instalar la biblioteca lo haremos con npm:
+npm install --save @nestjs/typeorm typeorm
+mysql
+
+También será necesario crear un fichero de
+configuración sino se especifica en el
+app.module.ts
+Este fichero de serie se llamará
+ormconfig.json
+
+-------------
+
+// ormconfig.json
+{
+ "type": "mysql",
+ "host": "localhost",
+ "port": 3306,
+ "username": "root",
+ "password": "root",
+ "database": "test",
+ "entities": ["dist/**/*.entity{.ts,.js}"],
+ "synchronize": true
+}
+
+-------------------
+
+ESTO ES UNA ENTIDAD
+
+//photo.entity.ts
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+@Entity()
+export class Photo {
+ @PrimaryGeneratedColumn()
+ id: number;
+ @Column({ length: 500 })
+ name: string;
+ @Column('text')
+ description: string;
+}
+
+-----------------------
+
+Si definimos un módulo que tenga una entidad
+y queremos que, se pueda usar desde otros
+módulos o integrar, dentro de la aplicación, será
+necesario que en el módulo, se importe la Entidad
+
+// photo.module.ts
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { PhotoService } from './photo.service';
+import { PhotoController } from './photo.controller';
+import { Photo } from './photo.entity';
+@Module({
+ imports: [TypeOrmModule.forFeature([Photo])],
+ providers: [PhotoService],
+ controllers: [PhotoController],
+})
+
+---------------------------
+
+Lo normal será que en el servicio tenga acceso, al
+repositorio de la entidad y luego se acceda al
+servicio desde el controlador, en clara
+referencia a los patrones Java
+
+// photo.service.ts
+import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { Photo } from './photo.entity';
+@Injectable()
+export class PhotoService {
+ constructor(
+ @InjectRepository(Photo)
+ private readonly photoRepository: Repository<Photo>,
+ ) {}
+ findAll(): Promise<Photo[]> {
+ return this.photoRepository.find();
+ }
+}
+
+-----------------------------
+
+Como se puede ver primero, se injecta el
+repositorio indicando el tipo del esquema y
+luego se usa en los métodos de la clase.
+En este caso se utiliza una promesa para
+devolver los datos, luego deberemos desde el
+controlador manejar dicha promesa
+
+@Controller('photo')
+export class PhotoController {
+ constructor(private readonly photoService: PhotoService) {}
+ @Get()
+ findAll(): Promise<Photo[]> {
+ return this.photoService.findAll();
+ }
+}

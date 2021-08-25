@@ -1,0 +1,11 @@
+C:\Users\AlumnoGTI\source\repos\LINQ_WORKER\LINQ_WORKER\bin\Debug\netcoreapp3.0\LINQ_WORKER.exe
+C:\Users\AlumnoGTI\source\repos\LINQ_WORKER\LINQ_WORKER\bin\Debug\netcoreapp3.0\LINQ_WORKER.deps.json
+C:\Users\AlumnoGTI\source\repos\LINQ_WORKER\LINQ_WORKER\bin\Debug\netcoreapp3.0\LINQ_WORKER.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\LINQ_WORKER\LINQ_WORKER\bin\Debug\netcoreapp3.0\LINQ_WORKER.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\LINQ_WORKER\LINQ_WORKER\bin\Debug\netcoreapp3.0\LINQ_WORKER.dll
+C:\Users\AlumnoGTI\source\repos\LINQ_WORKER\LINQ_WORKER\bin\Debug\netcoreapp3.0\LINQ_WORKER.pdb
+C:\Users\AlumnoGTI\source\repos\LINQ_WORKER\LINQ_WORKER\obj\Debug\netcoreapp3.0\LINQ_WORKER.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\LINQ_WORKER\LINQ_WORKER\obj\Debug\netcoreapp3.0\LINQ_WORKER.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\LINQ_WORKER\LINQ_WORKER\obj\Debug\netcoreapp3.0\LINQ_WORKER.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\LINQ_WORKER\LINQ_WORKER\obj\Debug\netcoreapp3.0\LINQ_WORKER.dll
+C:\Users\AlumnoGTI\source\repos\LINQ_WORKER\LINQ_WORKER\obj\Debug\netcoreapp3.0\LINQ_WORKER.pdb

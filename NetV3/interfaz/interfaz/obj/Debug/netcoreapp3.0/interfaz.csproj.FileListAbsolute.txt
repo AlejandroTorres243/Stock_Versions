@@ -1,0 +1,11 @@
+C:\Users\AlumnoGTI\source\repos\interfaz\interfaz\bin\Debug\netcoreapp3.0\interfaz.exe
+C:\Users\AlumnoGTI\source\repos\interfaz\interfaz\bin\Debug\netcoreapp3.0\interfaz.deps.json
+C:\Users\AlumnoGTI\source\repos\interfaz\interfaz\bin\Debug\netcoreapp3.0\interfaz.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\interfaz\interfaz\bin\Debug\netcoreapp3.0\interfaz.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\interfaz\interfaz\bin\Debug\netcoreapp3.0\interfaz.dll
+C:\Users\AlumnoGTI\source\repos\interfaz\interfaz\bin\Debug\netcoreapp3.0\interfaz.pdb
+C:\Users\AlumnoGTI\source\repos\interfaz\interfaz\obj\Debug\netcoreapp3.0\interfaz.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\interfaz\interfaz\obj\Debug\netcoreapp3.0\interfaz.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\interfaz\interfaz\obj\Debug\netcoreapp3.0\interfaz.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\interfaz\interfaz\obj\Debug\netcoreapp3.0\interfaz.dll
+C:\Users\AlumnoGTI\source\repos\interfaz\interfaz\obj\Debug\netcoreapp3.0\interfaz.pdb

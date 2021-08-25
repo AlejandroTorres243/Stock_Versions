@@ -1,0 +1,11 @@
+C:\Users\AlumnoGTI\source\repos\pruebaaparte\pruebaaparte\bin\Debug\netcoreapp3.0\pruebaaparte.exe
+C:\Users\AlumnoGTI\source\repos\pruebaaparte\pruebaaparte\bin\Debug\netcoreapp3.0\pruebaaparte.deps.json
+C:\Users\AlumnoGTI\source\repos\pruebaaparte\pruebaaparte\bin\Debug\netcoreapp3.0\pruebaaparte.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\pruebaaparte\pruebaaparte\bin\Debug\netcoreapp3.0\pruebaaparte.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\pruebaaparte\pruebaaparte\bin\Debug\netcoreapp3.0\pruebaaparte.dll
+C:\Users\AlumnoGTI\source\repos\pruebaaparte\pruebaaparte\bin\Debug\netcoreapp3.0\pruebaaparte.pdb
+C:\Users\AlumnoGTI\source\repos\pruebaaparte\pruebaaparte\obj\Debug\netcoreapp3.0\pruebaaparte.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\pruebaaparte\pruebaaparte\obj\Debug\netcoreapp3.0\pruebaaparte.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\pruebaaparte\pruebaaparte\obj\Debug\netcoreapp3.0\pruebaaparte.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\pruebaaparte\pruebaaparte\obj\Debug\netcoreapp3.0\pruebaaparte.dll
+C:\Users\AlumnoGTI\source\repos\pruebaaparte\pruebaaparte\obj\Debug\netcoreapp3.0\pruebaaparte.pdb

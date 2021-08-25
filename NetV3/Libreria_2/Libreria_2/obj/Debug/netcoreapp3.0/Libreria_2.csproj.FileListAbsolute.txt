@@ -1,0 +1,11 @@
+C:\Users\AlumnoGTI\source\repos\Libreria_2\Libreria_2\bin\Debug\netcoreapp3.0\Libreria_2.exe
+C:\Users\AlumnoGTI\source\repos\Libreria_2\Libreria_2\bin\Debug\netcoreapp3.0\Libreria_2.deps.json
+C:\Users\AlumnoGTI\source\repos\Libreria_2\Libreria_2\bin\Debug\netcoreapp3.0\Libreria_2.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\Libreria_2\Libreria_2\bin\Debug\netcoreapp3.0\Libreria_2.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\Libreria_2\Libreria_2\bin\Debug\netcoreapp3.0\Libreria_2.dll
+C:\Users\AlumnoGTI\source\repos\Libreria_2\Libreria_2\bin\Debug\netcoreapp3.0\Libreria_2.pdb
+C:\Users\AlumnoGTI\source\repos\Libreria_2\Libreria_2\obj\Debug\netcoreapp3.0\Libreria_2.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\Libreria_2\Libreria_2\obj\Debug\netcoreapp3.0\Libreria_2.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\Libreria_2\Libreria_2\obj\Debug\netcoreapp3.0\Libreria_2.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\Libreria_2\Libreria_2\obj\Debug\netcoreapp3.0\Libreria_2.dll
+C:\Users\AlumnoGTI\source\repos\Libreria_2\Libreria_2\obj\Debug\netcoreapp3.0\Libreria_2.pdb

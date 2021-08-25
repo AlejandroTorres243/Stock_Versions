@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Factores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MonedaOrigen_Id" Type="int" Nullable="false" />
+          <Property Name="MonedaDestino_Id" Type="int" Nullable="false" />
+          <Property Name="FactorConversion" Type="decimal" Precision="18" Scale="4" />
+        </EntityType>
+        <EntityType Name="Monedas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TipoMoneda" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_MonedaFactor">
+          <End Role="Monedas" Type="Self.Monedas" Multiplicity="1" />
+          <End Role="Factores" Type="Self.Factores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Monedas">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Factores">
+              <PropertyRef Name="MonedaOrigen_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MonedaFactor1">
+          <End Role="Monedas" Type="Self.Monedas" Multiplicity="1" />
+          <End Role="Factores" Type="Self.Factores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Monedas">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Factores">
+              <PropertyRef Name="MonedaDestino_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Model1StoreContainer">
+          <EntitySet Name="Factores" EntityType="Self.Factores" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Monedas" EntityType="Self.Monedas" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_MonedaFactor" Association="Self.FK_MonedaFactor">
+            <End Role="Monedas" EntitySet="Monedas" />
+            <End Role="Factores" EntitySet="Factores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MonedaFactor1" Association="Self.FK_MonedaFactor1">
+            <End Role="Monedas" EntitySet="Monedas" />
+            <End Role="Factores" EntitySet="Factores" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Monedas" EntityType="Model1.Moneda" />
+          <EntitySet Name="Factores" EntityType="Model1.Factor" />
+          <AssociationSet Name="MonedaFactor" Association="Model1.MonedaFactor">
+            <End Role="Moneda" EntitySet="Monedas" />
+            <End Role="Factor" EntitySet="Factores" />
+          </AssociationSet>
+          <AssociationSet Name="MonedaFactor1" Association="Model1.MonedaFactor1">
+            <End Role="Moneda" EntitySet="Monedas" />
+            <End Role="Factor" EntitySet="Factores" />
+          </AssociationSet>
+          <EntitySet Name="Historiales" EntityType="Model1.Historial" />
+          <EntitySet Name="StockDinericos" EntityType="Model1.StockDinerico" />
+          <AssociationSet Name="FactorHistorial" Association="Model1.FactorHistorial">
+            <End Role="Factor" EntitySet="Factores" />
+            <End Role="Historial" EntitySet="Historiales" />
+          </AssociationSet>
+          <AssociationSet Name="HistorialStockDinerico" Association="Model1.HistorialStockDinerico">
+            <End Role="Historial" EntitySet="Historiales" />
+            <End Role="StockDinerico" EntitySet="StockDinericos" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Moneda">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TipoMoneda" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="FactorOrigen" Relationship="Model1.MonedaFactor" FromRole="Moneda" ToRole="Factor" />
+          <NavigationProperty Name="FactorDestino" Relationship="Model1.MonedaFactor1" FromRole="Moneda" ToRole="Factor" />
+        </EntityType>
+        <EntityType Name="Factor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="MonedaOrigen" Relationship="Model1.MonedaFactor" FromRole="Factor" ToRole="Moneda" />
+          <NavigationProperty Name="MonedaDestino" Relationship="Model1.MonedaFactor1" FromRole="Factor" ToRole="Moneda" />
+          <Property Name="FactorConversion" Type="Decimal" Precision="18" Scale="4" />
+          <NavigationProperty Name="Historial" Relationship="Model1.FactorHistorial" FromRole="Factor" ToRole="Historial" />
+        </EntityType>
+        <Association Name="MonedaFactor">
+          <End Type="Model1.Moneda" Role="Moneda" Multiplicity="1" />
+          <End Type="Model1.Factor" Role="Factor" Multiplicity="*" />
+        </Association>
+        <Association Name="MonedaFactor1">
+          <End Type="Model1.Moneda" Role="Moneda" Multiplicity="1" />
+          <End Type="Model1.Factor" Role="Factor" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Historial">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="MoneyOrigenReg" />
+          <NavigationProperty Name="MoneyDestinoReg" />
+          <NavigationProperty Name="Factor" Relationship="Model1.FactorHistorial" FromRole="Historial" ToRole="Factor" />
+          <NavigationProperty Name="StockDinerico" Relationship="Model1.HistorialStockDinerico" FromRole="Historial" ToRole="StockDinerico" />
+        </EntityType>
+        <EntityType Name="StockDinerico">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Moneda" Type="String" Nullable="false" />
+          <Property Name="Cantidad" Type="String" Nullable="false" />
+          <NavigationProperty Name="Activo" />
+          <NavigationProperty Name="Pasivo" />
+          <NavigationProperty Name="Historial" Relationship="Model1.HistorialStockDinerico" FromRole="StockDinerico" ToRole="Historial" />
+        </EntityType>
+        <Association Name="FactorHistorial">
+          <End Type="Model1.Factor" Role="Factor" Multiplicity="1" />
+          <End Type="Model1.Historial" Role="Historial" Multiplicity="*" />
+        </Association>
+        <Association Name="HistorialStockDinerico">
+          <End Type="Model1.Historial" Role="Historial" Multiplicity="1" />
+          <End Type="Model1.StockDinerico" Role="StockDinerico" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="Monedas">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Moneda)">
+        <MappingFragment StoreEntitySet="Monedas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TipoMoneda" ColumnName="TipoMoneda" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factores">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Factor)">
+        <MappingFragment StoreEntitySet="Factores">
+          <ScalarProperty Name="FactorConversion" ColumnName="FactorConversion" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MonedaFactor" TypeName="Model1.MonedaFactor" StoreEntitySet="Factores">
+      <EndProperty Name="Moneda">
+        <ScalarProperty Name="Id" ColumnName="MonedaOrigen_Id" />
+      </EndProperty>
+      <EndProperty Name="Factor">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MonedaFactor1" TypeName="Model1.MonedaFactor1" StoreEntitySet="Factores">
+      <EndProperty Name="Moneda">
+        <ScalarProperty Name="Id" ColumnName="MonedaDestino_Id" />
+      </EndProperty>
+      <EndProperty Name="Factor">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

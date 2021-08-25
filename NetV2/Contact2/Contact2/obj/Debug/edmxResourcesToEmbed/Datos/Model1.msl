@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="Monedas">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Moneda)">
+        <MappingFragment StoreEntitySet="Monedas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TipoMoneda" ColumnName="TipoMoneda" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factores">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Factor)">
+        <MappingFragment StoreEntitySet="Factores">
+          <ScalarProperty Name="FactorConversion" ColumnName="FactorConversion" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MonedaFactor" TypeName="Model1.MonedaFactor" StoreEntitySet="Factores">
+      <EndProperty Name="Moneda">
+        <ScalarProperty Name="Id" ColumnName="MonedaOrigen_Id" />
+      </EndProperty>
+      <EndProperty Name="Factor">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MonedaFactor1" TypeName="Model1.MonedaFactor1" StoreEntitySet="Factores">
+      <EndProperty Name="Moneda">
+        <ScalarProperty Name="Id" ColumnName="MonedaDestino_Id" />
+      </EndProperty>
+      <EndProperty Name="Factor">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

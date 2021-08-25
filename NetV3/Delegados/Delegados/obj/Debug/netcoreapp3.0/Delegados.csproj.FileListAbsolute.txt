@@ -1,0 +1,11 @@
+C:\Users\AlumnoGTI\source\repos\Delegados\Delegados\bin\Debug\netcoreapp3.0\Delegados.exe
+C:\Users\AlumnoGTI\source\repos\Delegados\Delegados\bin\Debug\netcoreapp3.0\Delegados.deps.json
+C:\Users\AlumnoGTI\source\repos\Delegados\Delegados\bin\Debug\netcoreapp3.0\Delegados.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\Delegados\Delegados\bin\Debug\netcoreapp3.0\Delegados.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\Delegados\Delegados\bin\Debug\netcoreapp3.0\Delegados.dll
+C:\Users\AlumnoGTI\source\repos\Delegados\Delegados\bin\Debug\netcoreapp3.0\Delegados.pdb
+C:\Users\AlumnoGTI\source\repos\Delegados\Delegados\obj\Debug\netcoreapp3.0\Delegados.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\Delegados\Delegados\obj\Debug\netcoreapp3.0\Delegados.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\Delegados\Delegados\obj\Debug\netcoreapp3.0\Delegados.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\Delegados\Delegados\obj\Debug\netcoreapp3.0\Delegados.dll
+C:\Users\AlumnoGTI\source\repos\Delegados\Delegados\obj\Debug\netcoreapp3.0\Delegados.pdb

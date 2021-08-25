@@ -1,0 +1,16 @@
+Opciones para borrar en pontainer mysql:
+
+1.show container templates en app templates.
+2.te vas a update
+3.vas a modificar:
+	image: mysql:5.7
+	port host 3306 como container
+	2 variables (mysql_root_password y mysql_database) root y test (valores de texto)
+4.update templates
+5. paso 1 de nuevo
+6. en container eliminar el contenedor 3606 de mysql de nuevo
+7. se crear la plantilla de cero de mysql dandole click
+8. nombre de base para que te acuerdes mysql57
+9. show input advance
+10. se comprueba que el host y container tenga los valores que en el paso 3
+11.deploy the container

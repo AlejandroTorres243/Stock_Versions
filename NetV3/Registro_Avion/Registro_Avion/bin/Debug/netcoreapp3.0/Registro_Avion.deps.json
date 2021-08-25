@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Registro_Avion/1.0.0": {
+        "runtime": {
+          "Registro_Avion.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Registro_Avion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

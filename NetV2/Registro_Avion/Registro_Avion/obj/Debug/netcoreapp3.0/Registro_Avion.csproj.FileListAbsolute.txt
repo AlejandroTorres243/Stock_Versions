@@ -1,0 +1,11 @@
+C:\Users\AlumnoGTI\source\repos\Registro_Avion\Registro_Avion\bin\Debug\netcoreapp3.0\Registro_Avion.exe
+C:\Users\AlumnoGTI\source\repos\Registro_Avion\Registro_Avion\bin\Debug\netcoreapp3.0\Registro_Avion.deps.json
+C:\Users\AlumnoGTI\source\repos\Registro_Avion\Registro_Avion\bin\Debug\netcoreapp3.0\Registro_Avion.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\Registro_Avion\Registro_Avion\bin\Debug\netcoreapp3.0\Registro_Avion.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\Registro_Avion\Registro_Avion\bin\Debug\netcoreapp3.0\Registro_Avion.dll
+C:\Users\AlumnoGTI\source\repos\Registro_Avion\Registro_Avion\bin\Debug\netcoreapp3.0\Registro_Avion.pdb
+C:\Users\AlumnoGTI\source\repos\Registro_Avion\Registro_Avion\obj\Debug\netcoreapp3.0\Registro_Avion.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\Registro_Avion\Registro_Avion\obj\Debug\netcoreapp3.0\Registro_Avion.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\Registro_Avion\Registro_Avion\obj\Debug\netcoreapp3.0\Registro_Avion.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\Registro_Avion\Registro_Avion\obj\Debug\netcoreapp3.0\Registro_Avion.dll
+C:\Users\AlumnoGTI\source\repos\Registro_Avion\Registro_Avion\obj\Debug\netcoreapp3.0\Registro_Avion.pdb

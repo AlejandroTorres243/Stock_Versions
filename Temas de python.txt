@@ -1,0 +1,135 @@
+1. ¿Qué es Python?
+
+1.1.Algunas características
+
+1.2.Propiedades del lenguaje
+
+1.3.Biblioteca estándar
+
+1.4.Comenzando a programar
+
+2. Tipos de datos
+
+2.1.Tuplas, listas y diccionarios
+
+2.2.Estructuras de control de flujo,Bucles
+
+2.3.Comprensiones de listas
+
+2.4.Archivos
+
+2.5.Expresiones regulares
+
+3. Programación funcional
+
+3.1.Definiendo una función
+
+3.2.Llamando a una función
+
+3.3.Argumentos posicionales y nominados
+
+3.4.Argumentos defaults
+
+3.5.Recursividad
+
+4. Programación orientada a objetos
+
+4.1.Definiendo una clase
+
+4.2.Métodos y atributos de instancia
+
+4.3.Métodos y atributos de clase
+
+4.4.Herencia
+
+4.5.Módulos
+
+5. Programación avanzada
+
+5.1.Control de errores, manejo de excepciones
+
+5.2.Programas multitareas
+
+5.3.Interfaz gráfica
+
+6. Trabajando en Red
+
+6.1.Sockets
+
+6.2.Leyendo una URL
+
+6.3.Impactando un Web Service
+
+6.4.Mail
+
+6.5.FTP
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+Destinado a:
+Profesionales con Formación profesional, carrera universitaria o experiencia relacionada el sector industrial y/o la informática que deseen aprender la creación de servicios rest con Python
+
+Objetivos Formativos:
+
+    Conocer los fundamentos de los servicios web
+    Saber diferenciar y elegir un servicio SOAP o Rest
+    Saber conectar a un motor de bases de datos
+    Saber manejar peticiones Rest
+    Saber aplicar los estándares de calidad al servicio
+
+Requisitos:
+
+    Fundamentos de programación
+    Programación Python
+    Bases de datos relacionales
+
+Temario:
+
+1: Introducción
+Arquitectura SOA
+Ventajas
+Desventajas
+Servicios Web
+SOAP
+REST
+Resumen
+2: Django
+Introducción
+Características
+Mejoras en 2.0
+Instalación
+IDE’s
+3: Rutas y Vistas
+Introducción
+Gestión de Rutas
+Vistas (Controladores)
+Funciones del Controlador
+Captura de parámetros por URL
+4: Modelo de BBDD
+Introducción
+ORM
+Modelos
+Migraciones
+Shell
+Consultas básicas
+Agregaciones
+Relaciones entre modelos
+5: MongoDB desde Python
+Introducción
+Colecciones y Documentos
+Consultas básicas
+Agregación
+6: Peticiones Rest
+Django Rest Framework
+Funcionalidades
+Instalación
+Serializadores
+URL's
+Vistas
+Pruebas
+7: Recursos Alternativos
+Autenticación
+Flask
+SqlAlchemy
+Pruebas

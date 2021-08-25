@@ -1,0 +1,10 @@
+C:\Users\AlumnoGTI\source\repos\ConsoleApp6\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.exe
+C:\Users\AlumnoGTI\source\repos\ConsoleApp6\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.deps.json
+C:\Users\AlumnoGTI\source\repos\ConsoleApp6\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\ConsoleApp6\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\ConsoleApp6\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.dll
+C:\Users\AlumnoGTI\source\repos\ConsoleApp6\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.pdb
+C:\Users\AlumnoGTI\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\netcoreapp3.0\ConsoleApp6.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\netcoreapp3.0\ConsoleApp6.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\netcoreapp3.0\ConsoleApp6.dll
+C:\Users\AlumnoGTI\source\repos\ConsoleApp6\ConsoleApp6\obj\Debug\netcoreapp3.0\ConsoleApp6.pdb

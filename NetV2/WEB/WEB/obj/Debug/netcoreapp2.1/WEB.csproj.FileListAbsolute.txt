@@ -1,0 +1,14 @@
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\bin\Debug\netcoreapp2.1\WEB.deps.json
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\bin\Debug\netcoreapp2.1\WEB.runtimeconfig.json
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\bin\Debug\netcoreapp2.1\WEB.runtimeconfig.dev.json
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\bin\Debug\netcoreapp2.1\WEB.dll
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\bin\Debug\netcoreapp2.1\WEB.pdb
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\obj\Debug\netcoreapp2.1\WEB.csprojAssemblyReference.cache
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\obj\Debug\netcoreapp2.1\WEB.RazorAssemblyInfo.cache
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\obj\Debug\netcoreapp2.1\WEB.RazorAssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\obj\Debug\netcoreapp2.1\WEB.AssemblyInfoInputs.cache
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\obj\Debug\netcoreapp2.1\WEB.AssemblyInfo.cs
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\obj\Debug\netcoreapp2.1\WEB.RazorTargetAssemblyInfo.cache
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\obj\Debug\netcoreapp2.1\WEB.dll
+C:\Users\AlumnoGTI\source\repos\WEB\WEB\obj\Debug\netcoreapp2.1\WEB.pdb

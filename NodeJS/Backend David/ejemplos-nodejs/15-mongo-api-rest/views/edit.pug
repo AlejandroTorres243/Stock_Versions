@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  include includes/menu.pug
+  div 
+    div(id="mensajes")
+    form(method="post",action="",id="formu-edit")
+        input(id="iden",name="iden",type="hidden",value=item._id)
+        div
+            label(for="nombre") nombre
+            input(id="nombre",name="nombre",type="text",value=item.username)
+        div
+            label(for="pass") password
+            input(id="pass",name="pass",type="password",value=item.hash)
+        div 
+            input(type="submit",value="Enviar")
